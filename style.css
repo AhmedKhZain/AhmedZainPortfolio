@@ -60,10 +60,22 @@ header {
     font-size: 1.25rem;
     color: #ffffff;
     text-decoration: none;
+    
+    display: flex;
+    align-items: center;
+    gap: 0.0rem;
+    letter-spacing: -0.02em;
 }
 
 .logo span {
     color: var(--primary);
+    margin-left: 0;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
 }
 
 nav ul {
