@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Zain | .NET Backend Developer Portfolio</title>
-    <meta name="description" content="Portfolio of Ahmed Khalid Zain, a Backend Developer specializing in the .NET ecosystem, Clean Architecture, and Event-Driven systems based in Fayoum, Egypt.">
-    <meta name="keywords" content="Ahmed Khalid Zain, Ahmed Khalid, Backend Developer, .NET Developer, ASP.NET Core, C# Developer Fayoum, Clean Architecture, software engineer Egypt">
+    <meta name="description" content="Portfolio of Ahmed Khalid Zain, a Backend Developer specializing in the .NET ecosystem, Clean Architecture, and Event-Driven systems based in Egypt.">
+    <meta name="keywords" content="Ahmed Khalid Zain, Ahmed Khalid, Backend Developer, .NET Developer, ASP.NET Core, C# Developer Clean Architecture, software engineer Egypt">
     <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/x-icon" href="image.png">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="media/PageTitleIcon.png">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
         <div class="nav-container">
-            <a href="#" class="logo"><img src="icon2 copy 2.png" alt="Logo">AhmedKh<span>.Zain</span></a>
+            <a href="#" class="logo"><img src="media/logo.png" alt="Logo">AhmedKh<span>.Zain</span></a>
                 <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -32,7 +34,7 @@
             <h1 class="hero-title">Hi, I'm <span>Ahmed Khalid Zain</span></h1>
             <p class="hero-subtitle">Backend Developer specializing in building high-performance, resilient distributed systems within the .NET ecosystem.</p>
             <p class="hero-paragraph">
-                Based in Fayoum, Egypt. I focus on designing clean architectures, leveraging robust design patterns like DDD and CQRS, and implementing robust event-driven operations to solve complex data challenges.
+                Based in Egypt. I focus on designing clean architectures, leveraging robust design patterns like DDD and CQRS, and implementing robust event-driven operations to solve complex data challenges.
             </p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn btn-primary">Get In Touch</a>
@@ -223,13 +225,59 @@
                 <div class="contact-info">
                     <p>I am looking for professional opportunities where I can apply my engineering methodologies. Let's build something solid.</p>
                     <p><strong>Location:</strong> Egypt</p>
-                    <p><strong>Email:</strong> <a href="mailto:ahmed.kh.zain2156@gmail.com">ahmed.kh.zain2156@gmail.com</a></p>
-                    <p><strong>Phone:</strong> +20 109 428 1656</p>
-                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahmed-k-zain2156" target="_blank">linkedin.com/in/ahmed-k-zain2156</a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/AhmedKhZain" target="_blank">github.com/AhmedKhZain</a></p>
+                    
+                    <div class="contact-item">
+                        <span class="contact-label"><i class="fa-solid fa-envelope icon-mail"></i> Email:</span> 
+                        <a href="mailto:ahmed.kh.zain2156@gmail.com" class="qr-hover-link">
+                            ahmed.kh.zain2156@gmail.com
+                            <div class="qr-dropdown">
+                                <div class="qr-header"><i class="fa-solid fa-envelope"></i> Contact Me</div>
+                                <div id="email-qr" class="qr-box"></div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-label"><i class="fa-brands fa-whatsapp icon-whatsapp"></i> WhatsApp / Phone:</span> 
+                        <a href="https://wa.me/201094281656" target="_blank" class="qr-hover-link">
+                            +20 109 428 1656
+                            <div class="qr-dropdown">
+                                <div class="qr-header"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</div>
+                                <div id="whatsapp-qr" class="qr-box"></div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-label"><i class="fa-brands fa-linkedin icon-linkedin"></i> LinkedIn:</span> 
+                        <a href="https://www.linkedin.com/in/ahmed-k-zain2156" target="_blank" class="qr-hover-link">
+                            linkedin.com/in/ahmed-k-zain2156
+                            <div class="qr-dropdown">
+                                <div class="qr-header"><i class="fa-brands fa-linkedin"></i> Connect on LinkedIn</div>
+                                <div id="linkedin-qr" class="qr-box"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-label"><i class="fa-brands fa-github icon-github"></i> GitHub:</span> 
+                        <a href="https://github.com/AhmedKhZain" target="_blank" class="qr-hover-link">
+                            github.com/AhmedKhZain
+                            <div class="qr-dropdown">
+                                <div class="qr-header"><i class="fa-brands fa-github"></i> Follow on GitHub</div>
+                                <div id="github-qr" class="qr-box"></div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
+
+<!-- تأكد من وجود مكتبة الـ QR Code والملف الخاص بك قبل إغلاق الـ body مباشرة -->
+<script src="js/qrcode.min.js"></script>
+<script src="js/script.js"></script>
+
+
     </main>
 
     <footer>

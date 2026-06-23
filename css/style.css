@@ -9,7 +9,6 @@
     --accent: #238636;
 }
 
-/* تفعيل الـ Smooth Scrolling للتحرك السلس عند الضغط على الـ Navbar */
 html {
     scroll-behavior: smooth;
 }
@@ -31,11 +30,11 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-        background-color: rgba(13, 17, 23, 0.6);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border-bottom: 1px solid rgba(255,255,255,0.04);
-        box-shadow: 0 4px 20px rgba(2,6,23,0.6);
+    background-color: rgba(13, 17, 23, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 4px 20px rgba(2, 6, 23, 0.6);
     z-index: 1000;
 }
 
@@ -48,22 +47,20 @@ header {
     padding: 1rem 2rem;
 }
 
-    /* Hero paragraph moved from inline style */
-    .hero-paragraph {
-        max-width: 700px;
-        margin-bottom: 2rem;
-        color: var(--text-muted);
-    }
+.hero-paragraph {
+    max-width: 700px;
+    margin-bottom: 2rem;
+    color: var(--text-muted);
+}
 
 .logo {
     font-weight: bold;
     font-size: 1.25rem;
     color: #ffffff;
     text-decoration: none;
-    
     display: flex;
     align-items: center;
-    gap: 0.0rem;
+    gap: 0.35rem;
     letter-spacing: -0.02em;
 }
 
@@ -73,7 +70,7 @@ header {
 }
 
 .logo img {
-    width: 40px;
+    width: 28px;
     height: auto;
     object-fit: contain;
 }
@@ -219,20 +216,15 @@ section {
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.85rem;
+    transition: transform 220ms cubic-bezier(.2, .9, .2, 1), background-color 180ms ease, color 180ms ease, box-shadow 220ms ease;
 }
 
-    /* Tag hover micro-animation */
-    .tag {
-        transition: transform 220ms cubic-bezier(.2,.9,.2,1),
-                    background-color 180ms ease, color 180ms ease, box-shadow 220ms ease;
-    }
-
-    .tag:hover {
-        transform: translateY(-3px) scale(1.02);
-        background-color: rgba(88,166,255,0.08);
-        color: var(--primary-hover);
-        box-shadow: 0 6px 18px rgba(8,12,20,0.45);
-    }
+.tag:hover {
+    transform: translateY(-3px) scale(1.02);
+    background-color: rgba(88, 166, 255, 0.08);
+    color: var(--primary-hover);
+    box-shadow: 0 6px 18px rgba(8, 12, 20, 0.45);
+}
 
 .projects-list {
     display: flex;
@@ -240,22 +232,20 @@ section {
     gap: 1.5rem;
 }
 
-/* تصميم الـ Expandable Card للمشاريع */
 .project-accordion {
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
-        transition: border-color 200ms ease, transform 250ms cubic-bezier(.2,.9,.2,1), box-shadow 250ms ease;
+    transition: border-color 200ms ease, transform 250ms cubic-bezier(.2, .9, .2, 1), box-shadow 250ms ease;
 }
 
 .project-accordion:hover {
     border-color: var(--text-muted);
-        transform: translateY(-6px);
-        box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
 }
 
-/* الجزء الثابت العالي للمشروع */
 .project-header-trigger {
     padding: 1.5rem 2rem;
     display: flex;
@@ -283,30 +273,20 @@ section {
     transition: transform 0.3s ease;
 }
 
-/* المحتوى المخفي الذي يظهر عند فتح المشروع */
 .project-content-expandable {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
     border-top: 0 solid var(--border-color);
+    transition: max-height 420ms cubic-bezier(.2, .9, .2, 1);
 }
-
-    .project-content-expandable {
-        transition: max-height 420ms cubic-bezier(.2,.9,.2,1);
-    }
-
-    .project-inner-body {
-        padding: 2rem;
-        opacity: 0;
-        transform: translateY(6px);
-        transition: opacity 320ms ease, transform 320ms ease;
-    }
 
 .project-inner-body {
     padding: 2rem;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 320ms ease, transform 320ms ease;
 }
 
-/* عند تفعيل الكلاس Active عبر الـ JS */
 .project-accordion.active .project-content-expandable {
     max-height: 1200px;
     border-top: 1px solid var(--border-color);
@@ -317,10 +297,10 @@ section {
     color: var(--primary);
 }
 
-    .project-accordion.active .project-inner-body {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.project-accordion.active .project-inner-body {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .project-desc {
     font-size: 1rem;
@@ -348,7 +328,6 @@ section {
     color: var(--primary);
 }
 
-/* حاوية السكرين شوتس */
 .project-screenshots {
     margin-bottom: 2rem;
 }
@@ -401,6 +380,10 @@ section {
     gap: 2rem;
 }
 
+.contact-item {
+    margin-bottom: 0.75rem;
+}
+
 .contact-info p {
     margin-bottom: 1rem;
     display: flex;
@@ -417,6 +400,165 @@ section {
     text-decoration: underline;
 }
 
+/* هندسة وإصلاح حاويات التوليد الفردي للـ QR Code */
+.qr-hover-link {
+    position: relative;
+    display: inline-block;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.qr-hover-link .qr-dropdown {
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 0.75rem;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: max-content;
+}
+
+.qr-hover-link .qr-header {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #c9d1d9;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.qr-hover-link .qr-header i {
+    font-size: 1rem;
+}
+
+.fa-envelope { color: #ea4335; }
+.fa-whatsapp { color: #25d366; }
+.fa-linkedin { color: #0077b5; }
+
+.qr-hover-link .qr-box img,
+.qr-hover-link .qr-box canvas {
+    display: block;
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 6px;
+}
+
+.qr-hover-link:hover .qr-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+}
+
+.qr-hover-link .qr-dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #161b22 transparent transparent transparent;
+}
+
+/* تنسيق سطر وسائل التواصل الخارجي */
+.contact-item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.contact-label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-main);
+}
+
+/* تلوين الأيقونات الخارجية بشكل متناسق مع البرندات العالمية */
+.contact-label i {
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.icon-mail { color: #ea4335; }
+.icon-whatsapp { color: #25d366; }
+.icon-linkedin { color: #0077b5; }
+.icon-github { color: #ffffff; } /* اللون الأبيض ليتوافق مع ثيم جيت هاب في الوضع الداكن */
+
+/* تحديثات المربع المنبثق لضمان الثبات التام ومنع التداخل */
+.qr-hover-link .qr-dropdown {
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 0.75rem;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: max-content;
+}
+
+.qr-hover-link .qr-header {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #c9d1d9;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.qr-hover-link .qr-box img,
+.qr-hover-link .qr-box canvas {
+    display: block;
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 6px;
+}
+
+.qr-hover-link:hover .qr-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+}
+
+.qr-hover-link .qr-dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #161b22 transparent transparent transparent;
+}
 footer {
     text-align: center;
     padding: 2rem;
