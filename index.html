@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Zain | .NET Backend Developer Portfolio</title>
-    <meta name="description" content="Portfolio of Ahmed Khalid Zain, a Backend Developer specializing in the .NET ecosystem, Clean Architecture, and Event-Driven systems based in Egypt.">
-    <meta name="keywords" content="Ahmed Khalid Zain, Ahmed Khalid, Backend Developer, .NET Developer, ASP.NET Core, C# Developer Clean Architecture, software engineer Egypt">
+    <meta name="description"
+        content="Portfolio of Ahmed Khalid Zain, a Backend Developer specializing in the .NET ecosystem, Clean Architecture, and Event-Driven systems based in Egypt.">
+    <meta name="keywords"
+        content="Ahmed Zain, Ahmed Khalid Zain, Ahmed Khalid, Backend Developer, .NET Developer, ASP.NET Core, C# Developer Clean Architecture, software engineer Egypt">
     <meta name="robots" content="index, follow">
 
-    <link rel="icon" type="image/x-icon" href="media/PageTitleIcon.png">
+    <!-- Icons structure based on media folder -->
+    <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="./media/favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="./media/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./media/apple-touch-icon.png">
+
+    <!-- Web App Manifest link -->
+    <link rel="manifest" href="./site.webmanifest">
+
     <meta name="google-site-verification" content="ZHuCWBVnjNB_BZb25lk8FPMRiqoIGLueCcJy65IXliY" />
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header>
         <div class="nav-container">
             <a href="#" class="logo"><img src="media/logo.png" alt="Logo">AhmedKh<span>.Zain</span></a>
-                <nav>
+            <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -31,14 +43,368 @@
 
     <main>
         <section id="about" class="hero-section">
-            <h1 class="hero-title">Hi, I'm <span>Ahmed Khalid Zain</span></h1>
-            <p class="hero-subtitle">Backend Developer specializing in building high-performance, resilient distributed systems within the .NET ecosystem.</p>
-            <p class="hero-paragraph">
-                Based in Egypt. I focus on designing clean architectures, leveraging robust design patterns like DDD and CQRS, and implementing robust event-driven operations to solve complex data challenges.
-            </p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#projects" class="btn btn-secondary">View My Work</a>
+            <!-- العمود الأيسر: يحتوي على النصوص والأزرار -->
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span>Ahmed Zain</span></h1>
+                <p class="hero-subtitle">Backend Developer specializing in building high-performance, resilient
+                    distributed systems within the .NET ecosystem.</p>
+                <p class="hero-paragraph">
+                    Based in Egypt. I focus on designing clean architectures, leveraging robust design patterns like DDD
+                    and CQRS, and implementing robust event-driven operations to solve complex data challenges.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+
+            <!-- العمود الأيمن: لملء المساحة المهدرة بعنصر بصري -->
+            <div class="hero-visual">
+                <div class="hero-carousel">
+                    <div class="carousel-inner">
+                        <article class="carousel-slide active" aria-label="Microservices architecture slide">
+                            <div class="carousel-hero-card">
+                                <div class="architecture-svg">
+                                    <svg viewBox="0 0 760 320" aria-hidden="true" role="img">
+                                        <defs>
+                                            <!-- Gradients for sleek glow look -->
+                                            <linearGradient id="client-blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#38bdf8" />
+                                                <stop offset="100%" stop-color="#0284c7" />
+                                            </linearGradient>
+                                            <linearGradient id="net-violet-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#a78bfa" />
+                                                <stop offset="100%" stop-color="#7c3aed" />
+                                            </linearGradient>
+                                            <linearGradient id="green-emerald-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#34d399" />
+                                                <stop offset="100%" stop-color="#059669" />
+                                            </linearGradient>
+                                            <linearGradient id="rabbitmq-orange-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#fb923c" />
+                                                <stop offset="100%" stop-color="#ea580c" />
+                                            </linearGradient>
+
+                                            <!-- Drop shadow glow filters -->
+                                            <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#38bdf8" flood-opacity="0.4" />
+                                            </filter>
+                                            <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#a78bfa" flood-opacity="0.4" />
+                                            </filter>
+                                            <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#34d399" flood-opacity="0.4" />
+                                            </filter>
+                                            <filter id="glow-orange" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#fb923c" flood-opacity="0.4" />
+                                            </filter>
+
+                                            <!-- Markers -->
+                                            <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
+                                                markerHeight="6" orient="auto-start-reverse">
+                                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" />
+                                            </marker>
+                                            <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
+                                                markerHeight="6" orient="auto-start-reverse">
+                                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#a78bfa" />
+                                            </marker>
+                                            <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
+                                                markerHeight="6" orient="auto-start-reverse">
+                                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#34d399" />
+                                            </marker>
+                                        </defs>
+
+                                        <!-- Client Node -->
+                                        <rect x="44" y="40" width="140" height="62" rx="12" ry="12" fill="rgba(15, 23, 42, 0.65)"
+                                            stroke="url(#client-blue-grad)" stroke-width="1.5" filter="url(#glow-blue)" />
+                                        <text x="114" y="70" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600"
+                                            font-family="ui-monospace, SFMono-Regular, monospace">Client</text>
+                                        <text x="114" y="88" text-anchor="middle" fill="#7dd3fc" font-size="11">Web / Mobile</text>
+
+                                        <!-- API Gateway Node -->
+                                        <rect x="298" y="40" width="160" height="62" rx="12" ry="12" fill="rgba(15, 23, 42, 0.65)"
+                                            stroke="url(#net-violet-grad)" stroke-width="1.5" filter="url(#glow-purple)" />
+                                        <text x="378" y="76" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600"
+                                            font-family="ui-monospace, SFMono-Regular, monospace">API Gateway</text>
+
+                                        <!-- Microservice Node -->
+                                        <rect x="160" y="140" width="140" height="62" rx="12" ry="12" fill="rgba(15, 23, 42, 0.65)"
+                                            stroke="url(#green-emerald-grad)" stroke-width="1.5" filter="url(#glow-green)" />
+                                        <text x="230" y="170" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600"
+                                            font-family="ui-monospace, SFMono-Regular, monospace">.NET Core</text>
+                                        <text x="230" y="188" text-anchor="middle" fill="#a7f3d0" font-size="11">Microservice</text>
+
+                                        <!-- RabbitMQ Node -->
+                                        <rect x="440" y="140" width="160" height="62" rx="12" ry="12" fill="rgba(15, 23, 42, 0.65)"
+                                            stroke="url(#rabbitmq-orange-grad)" stroke-width="1.5" filter="url(#glow-orange)" />
+                                        <text x="520" y="170" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600"
+                                            font-family="ui-monospace, SFMono-Regular, monospace">RabbitMQ</text>
+                                        <text x="520" y="188" text-anchor="middle" fill="#fed7aa" font-size="11">Message Bus</text>
+
+                                        <!-- Connections & Flows -->
+                                        <path class="flow-line" d="M 184 71 L 298 71" fill="none" stroke="#38bdf8"
+                                            stroke-width="2" stroke-dasharray="6 8" marker-end="url(#arrow-blue)" />
+                                        <path class="flow-line" d="M 378 102 L 230 140" fill="none" stroke="#a78bfa"
+                                            stroke-width="2" stroke-dasharray="6 8" marker-end="url(#arrow-purple)" />
+                                        <path class="flow-line" d="M 378 102 L 520 140" fill="none" stroke="#34d399"
+                                            stroke-width="2" stroke-dasharray="6 8" marker-end="url(#arrow-green)" />
+                                        
+                                        <circle cx="184" cy="71" r="4" fill="#38bdf8" />
+                                        <circle cx="378" cy="102" r="4" fill="#a78bfa" />
+                                    </svg>
+                                </div>
+                                <div class="code-mockup">
+                                    <div class="window-controls">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                    <pre><code><span class="token-keyword">public record</span> <span class="token-class">OrderPlacedEvent(</span>
+<span class="token-type">Guid</span> <span class="token-property">OrderId</span>
+<span class="token-class">)</span> : <span class="token-interface">IDomainEvent</span>
+</code></pre>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="carousel-slide" aria-label="Webhook sequence diagram slide">
+                            <div class="carousel-hero-card">
+                                <div class="sequence-svg">
+                                    <svg viewBox="0 0 760 320" aria-hidden="true" role="img">
+                                        <defs>
+                                            <!-- Gradients for sleek glow look -->
+                                            <linearGradient id="client-blue-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#38bdf8" />
+                                                <stop offset="100%" stop-color="#0284c7" />
+                                            </linearGradient>
+                                            <linearGradient id="net-violet-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#a78bfa" />
+                                                <stop offset="100%" stop-color="#7c3aed" />
+                                            </linearGradient>
+                                            <linearGradient id="green-emerald-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#34d399" />
+                                                <stop offset="100%" stop-color="#059669" />
+                                            </linearGradient>
+
+                                            <!-- Drop shadow glow filters -->
+                                            <filter id="glow-blue-2" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#38bdf8" flood-opacity="0.4" />
+                                            </filter>
+                                            <filter id="glow-purple-2" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#a78bfa" flood-opacity="0.4" />
+                                            </filter>
+                                            <filter id="glow-green-2" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#34d399" flood-opacity="0.4" />
+                                            </filter>
+
+                                            <!-- Sequence Markers -->
+                                            <marker id="arrow-blue-seq" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
+                                                markerHeight="6" orient="auto-start-reverse">
+                                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" />
+                                            </marker>
+                                            <marker id="arrow-purple-seq" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
+                                                markerHeight="6" orient="auto-start-reverse">
+                                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#a78bfa" />
+                                            </marker>
+                                            <marker id="arrow-green-seq" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
+                                                markerHeight="6" orient="auto-start-reverse">
+                                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#34d399" />
+                                            </marker>
+                                        </defs>
+
+                                        <!-- Lifelines -->
+                                        <line x1="160" y1="40" x2="160" y2="280" stroke="#334155" stroke-width="1.5"
+                                            stroke-dasharray="4 6" opacity="0.7" />
+                                        <line x1="380" y1="40" x2="380" y2="280" stroke="#334155" stroke-width="1.5"
+                                            stroke-dasharray="4 6" opacity="0.7" />
+                                        <line x1="600" y1="40" x2="600" y2="280" stroke="#334155" stroke-width="1.5"
+                                            stroke-dasharray="4 6" opacity="0.7" />
+
+                                        <!-- Header Nodes -->
+                                        <rect x="110" y="8" width="100" height="32" rx="8" ry="8" fill="rgba(15, 23, 42, 0.65)"
+                                            stroke="url(#client-blue-grad-2)" stroke-width="1.5" filter="url(#glow-blue-2)" />
+                                        <text x="160" y="29" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600"
+                                            font-family="ui-monospace, SFMono-Regular, monospace">App</text>
+
+                                        <rect x="320" y="8" width="120" height="32" rx="8" ry="8" fill="rgba(15, 23, 42, 0.65)"
+                                            stroke="url(#net-violet-grad-2)" stroke-width="1.5" filter="url(#glow-purple-2)" />
+                                        <text x="380" y="29" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600"
+                                            font-family="ui-monospace, SFMono-Regular, monospace">Stripe GW</text>
+
+                                        <rect x="540" y="8" width="120" height="32" rx="8" ry="8" fill="rgba(15, 23, 42, 0.65)"
+                                            stroke="url(#green-emerald-grad-2)" stroke-width="1.5" filter="url(#glow-green-2)" />
+                                        <text x="600" y="29" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600"
+                                            font-family="ui-monospace, SFMono-Regular, monospace">Backend</text>
+
+                                        <!-- Message 1: Pay Request -->
+                                        <path d="M 170 110 L 370 110" fill="none" stroke="#38bdf8" stroke-width="2"
+                                            marker-end="url(#arrow-blue-seq)" />
+                                        <text x="270" y="98" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="500">1. Pay Request</text>
+                                        <circle cx="170" cy="110" r="3.5" fill="#38bdf8" />
+
+                                        <!-- Message 2: POST Webhook -->
+                                        <path d="M 390 160 L 590 160" fill="none" stroke="#a78bfa" stroke-width="2"
+                                            marker-end="url(#arrow-purple-seq)" />
+                                        <text x="490" y="148" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="500">2. POST Webhook</text>
+                                        <circle cx="390" cy="160" r="3.5" fill="#a78bfa" />
+
+                                        <!-- Message 3: Order Fulfilled -->
+                                        <path d="M 590 210 L 390 210" fill="none" stroke="#34d399" stroke-width="2"
+                                            stroke-dasharray="5 4" marker-end="url(#arrow-green-seq)" />
+                                        <text x="490" y="198" text-anchor="middle" fill="#86efac" font-size="11" font-weight="500">3. Order Fulfilled</text>
+                                        <circle cx="590" cy="210" r="3.5" fill="#34d399" />
+                                    </svg>
+                                </div>
+                                <div class="code-mockup code-mockup-secondary">
+                                    <div class="window-controls">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                    <pre><code><span class="token-comment">// webhook receiver</span>
+public IActionResult Webhook([FromBody] WebhookPayload payload)
+{
+    <span class="token-keyword">var</span> result = _orderService.Process(payload);
+    <span class="token-keyword">return</span> Ok(result);
+}</code></pre>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="carousel-slide" aria-label="Read replica architecture slide">
+                            <div class="carousel-hero-card">
+                                <div class="replica-svg">
+                                    <svg viewBox="0 0 760 320" aria-hidden="true" role="img">
+                                        <defs>
+                                            <!-- Gradients for sleek glow look -->
+                                            <linearGradient id="client-blue-grad-3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#38bdf8" />
+                                                <stop offset="100%" stop-color="#0284c7" />
+                                            </linearGradient>
+                                            <linearGradient id="net-violet-grad-3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#a78bfa" />
+                                                <stop offset="100%" stop-color="#7c3aed" />
+                                            </linearGradient>
+                                            <linearGradient id="green-emerald-grad-3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#34d399" />
+                                                <stop offset="100%" stop-color="#059669" />
+                                            </linearGradient>
+
+                                            <!-- Drop shadow glow filters -->
+                                            <filter id="glow-blue-3" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#38bdf8" flood-opacity="0.4" />
+                                            </filter>
+                                            <filter id="glow-purple-3" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#a78bfa" flood-opacity="0.4" />
+                                            </filter>
+                                            <filter id="glow-green-3" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#34d399" flood-opacity="0.4" />
+                                            </filter>
+
+                                            <!-- Arrow Markers -->
+                                            <marker id="arrow-blue-rep" viewBox="0 0 10 10" refX="8" refY="5"
+                                                markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" />
+                                            </marker>
+                                            <marker id="arrow-purple-rep" viewBox="0 0 10 10" refX="8" refY="5"
+                                                markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#a78bfa" />
+                                            </marker>
+                                            <marker id="arrow-green-rep" viewBox="0 0 10 10" refX="8" refY="5"
+                                                markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#34d399" />
+                                            </marker>
+                                        </defs>
+
+                                        <!-- .NET Core App Card -->
+                                        <rect x="60" y="110" width="160" height="62" rx="12" ry="12" fill="rgba(15, 23, 42, 0.65)"
+                                            stroke="url(#client-blue-grad-3)" stroke-width="1.5" filter="url(#glow-blue-3)" />
+                                        <text x="140" y="146" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600"
+                                            font-family="ui-monospace, SFMono-Regular, monospace">.NET Core App</text>
+
+                                        <!-- Primary Database (3D Cylinder) -->
+                                        <g filter="url(#glow-purple-3)">
+                                            <path d="M 330 50 V 110 A 40 12 0 0 0 410 110 V 50 Z"
+                                                fill="rgba(76, 29, 149, 0.25)" stroke="url(#net-violet-grad-3)" stroke-width="1.5" />
+                                            <ellipse cx="370" cy="50" rx="40" ry="12" fill="rgba(30, 27, 75, 0.6)" stroke="url(#net-violet-grad-3)"
+                                                stroke-width="1.5" />
+                                            <path d="M 330 70 A 40 12 0 0 0 410 70" fill="none" stroke="url(#net-violet-grad-3)"
+                                                stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6" />
+                                            <path d="M 330 90 A 40 12 0 0 0 410 90" fill="none" stroke="url(#net-violet-grad-3)"
+                                                stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6" />
+                                        </g>
+                                        <text x="370" y="144" text-anchor="middle" fill="#f8fafc" font-size="13"
+                                            font-family="ui-monospace, SFMono-Regular, monospace"
+                                            font-weight="600">Primary DB</text>
+                                        <text x="370" y="161" text-anchor="middle" fill="#c4b5fd"
+                                            font-size="11">Write Only</text>
+
+                                        <!-- Read Replica Database (3D Cylinder) -->
+                                        <g filter="url(#glow-green-3)">
+                                            <path d="M 550 150 V 210 A 40 12 0 0 0 630 210 V 150 Z"
+                                                fill="rgba(6, 78, 59, 0.25)" stroke="url(#green-emerald-grad-3)" stroke-width="1.5" />
+                                            <ellipse cx="590" cy="150" rx="40" ry="12" fill="rgba(6, 78, 59, 0.6)" stroke="url(#green-emerald-grad-3)"
+                                                stroke-width="1.5" />
+                                            <path d="M 550 170 A 40 12 0 0 0 630 170" fill="none" stroke="url(#green-emerald-grad-3)"
+                                                stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6" />
+                                            <path d="M 550 190 A 40 12 0 0 0 630 190" fill="none" stroke="url(#green-emerald-grad-3)"
+                                                stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6" />
+                                        </g>
+                                        <text x="590" y="244" text-anchor="middle" fill="#f8fafc" font-size="13"
+                                            font-family="ui-monospace, SFMono-Regular, monospace"
+                                            font-weight="600">Read Replica</text>
+                                        <text x="590" y="261" text-anchor="middle" fill="#a7f3d0"
+                                            font-size="11">Read Only</text>
+
+                                        <!-- Flow Lines with Arrows -->
+                                        <path d="M 220 135 C 260 135, 290 100, 320 84" fill="none" stroke="#38bdf8"
+                                            stroke-width="2" marker-end="url(#arrow-blue-rep)" />
+                                        <text x="270" y="105" text-anchor="middle" fill="#7dd3fc"
+                                            font-size="11" font-weight="500">write</text>
+
+                                        <path class="flow-line" d="M 410 80 C 470 80, 490 180, 540 180" fill="none"
+                                            stroke="#a78bfa" stroke-width="2" stroke-dasharray="6 8"
+                                            marker-end="url(#arrow-purple-rep)" />
+                                        <text x="475" y="138" text-anchor="middle" fill="#c4b5fd"
+                                            font-size="11" font-weight="500">replicate (async)</text>
+
+                                        <path d="M 550 200 C 440 210, 310 170, 230 155" fill="none" stroke="#34d399"
+                                            stroke-width="2" marker-end="url(#arrow-green-rep)" />
+                                        <text x="375" y="180" text-anchor="middle" fill="#86efac"
+                                            font-size="11" font-weight="500">read</text>
+                                    </svg>
+                                </div>
+                                <div class="code-mockup code-mockup-tertiary">
+                                    <div class="window-controls">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                    <pre><code><span class="token-comment">// separate read/write contexts</span>
+public class OrderRepository
+{
+    private readonly CommandDbContext _commands;
+    private readonly QueryDbContext _queries;
+    public OrderRepository(
+        CommandDbContext commands,
+         QueryDbContext queries)
+    {
+        _commands = commands;
+        _queries = queries;
+    }
+
+    public Task<Order> GetOrderAsync(Guid id)
+        => _queries.Orders.FindAsync(id);
+}
+</code></pre>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button class="carousel-indicator active" data-index="0" aria-label="Slide 1"></button>
+                        <button class="carousel-indicator" data-index="1" aria-label="Slide 2"></button>
+                        <button class="carousel-indicator" data-index="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -50,36 +416,56 @@
                     <div class="skill-tags">
                         <span class="tag">C#</span>
                         <span class="tag">SQL</span>
+                        <span class="tag">Python</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Frameworks & Tools</h3>
+                    <h3>Frameworks & Data Access</h3>
                     <div class="skill-tags">
                         <span class="tag">ASP.NET Core API</span>
-                        <span class="tag">Entity Framework Core</span>
-                        <span class="tag">LINQ</span>
+                        <span class="tag">EF Core</span>
                         <span class="tag">Dapper</span>
-                        <span class="tag">MS SQL Server</span>
                         <span class="tag">ADO.NET</span>
+                        <span class="tag">SQL Server</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Architecture & Patterns</h3>
                     <div class="skill-tags">
                         <span class="tag">Clean Architecture</span>
-                        <span class="tag">Domain Driven Design (DDD)</span>
-                        <span class="tag">CQRS & MediatR</span>
-                        <span class="tag">Repository & Unit of Work</span>
+                        <span class="tag">Domain-Driven Design (DDD)</span>
+                        <span class="tag">CQRS</span>
+                        <span class="tag">MediatR</span>
+                        <span class="tag">Repository Pattern</span>
+                        <span class="tag">Unit of Work</span>
+                        <span class="tag">Result Pattern</span>
+                        <span class="tag">Options Pattern</span>
+                        <span class="tag">Event Sourcing</span>
                         <span class="tag">Eventual Consistency</span>
-                        <span class="tag">Result & Options Patterns</span>
+                        <span class="tag">Outbox Pattern</span>
+                        <span class="tag">Event-Driven Cache Invalidation</span>
+                        <span class="tag">Idempotency</span>
+                        <span class="tag">Dynamic Authorization</span>
+                        <span class="tag">Role-Based Authorization</span>
+                        <span class="tag">Soft Foreign Keys</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Integrations</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Stripe</span>
+                        <span class="tag">Paymob</span>
+                        <span class="tag">Gemini LLM</span>
+                        <span class="tag">Cloudinary</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Next on Horizon</h3>
                     <div class="skill-tags">
                         <span class="tag">RabbitMQ</span>
-                        <span class="tag">Redis & Caching</span>
                         <span class="tag">Docker</span>
+                        <span class="tag">In-Memory Caching</span>
+                        <span class="tag">Redis</span>
                     </div>
                 </div>
             </div>
@@ -88,7 +474,7 @@
         <section id="projects">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-list">
-                
+
                 <div class="project-accordion">
                     <div class="project-header-trigger">
                         <div class="project-title-area">
@@ -99,27 +485,87 @@
                     </div>
                     <div class="project-content-expandable">
                         <div class="project-inner-body">
-                            <p class="project-desc">An advanced, data-consistent distributed platform built to handle complex state workflows across micro-behaviors.</p>
-                            <ul class="project-features">
-                                <li>Implemented full Event Sourcing architectures for accurate tracking of online orders.</li>
-                                <li>Designed dynamic Eventual Consistency logic equipped with automated event rollbacks.</li>
-                                <li>Engineered a hybrid data engine using Dapper for fast reads and EF Core for secure writes.</li>
+                            <p class="project-desc">
+                                Samraa AlYaman is a high-performance, enterprise-grade E-commerce platform designed around distributed system principles.<br><br>
+                                The primary engineering goals of the platform are:
+                            </p>
+                            <ul class="project-features" style="margin-bottom: 1rem;">
+                                <li>Absolute data consistency</li>
+                                <li>High-throughput query performance</li>
+                                <li>Reliable asynchronous workflows</li>
+                                <li>Complex business domain modeling</li>
                             </ul>
-                            
-                            <div class="project-screenshots">
-                                <h4 class="screenshot-title">System Architecture & Database Design</h4>
-                                <div class="screenshots-grid">
-                                    <div class="screenshot-wrapper">
-                                        <div class="screenshot-placeholder">Database Schema / Architecture Diagram</div>
+                            <p class="project-desc" style="margin-bottom: 1.5rem;">
+                                The project demonstrates advanced backend engineering rather than simply CRUD operations.
+                            </p>
+
+                            <h4 class="screenshot-title" style="margin-bottom: 0.5rem;">Key Engineering Highlights</h4>
+                            <ul class="project-features">
+                                <li>Designed a distributed Event Sourcing workflow for complete historical state tracking.</li>
+                                <li>Implemented Eventual Consistency with automatic rollback mechanisms for synchronization failures.</li>
+                                <li>Built a hybrid persistence layer using EF Core for writes and Dapper for high-performance reads.</li>
+                                <li>Designed an advanced audit logging subsystem capable of reconstructing historical business events.</li>
+                                <li>Implemented a Soft Foreign Key strategy to safely simulate cascading deletes without database locking.</li>
+                            </ul>
+
+                            <div class="project-skills">
+                                <span class="skill-tag">C#</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">ASP.NET Core API</span>
+                                <span class="skill-tag">EF Core</span>
+                                <span class="skill-tag">Dapper</span>
+                                <span class="skill-tag">SQL Server</span>
+                                <span class="skill-tag">Clean Architecture</span>
+                                <span class="skill-tag">Domain-Driven Design (DDD)</span>
+                                <span class="skill-tag">CQRS</span>
+                                <span class="skill-tag">MediatR</span>
+                                <span class="skill-tag">Result Pattern</span>
+                                <span class="skill-tag">Event Sourcing</span>
+                                <span class="skill-tag">Eventual Consistency</span>
+                                <span class="skill-tag">Soft Foreign Keys</span>
+                                <span class="skill-tag">Role-Based Authorization</span>
+                            </div>
+
+                            <div class="technical-breakdown" style="margin-top: 2rem;">
+                                <h4 class="screenshot-title">Technical Breakdown</h4>
+                                
+                                <div class="technical-item">
+                                    <h5>1. Database Schema Overview</h5>
+                                    <img loading="lazy" src="SamraaAlYamanDb.png" alt="Database Schema">
+                                    <p class="project-desc">Show the relational database architecture supporting event-driven workflows.<br><br>Highlight the separation between operational tables and audit/event tables and explain how this enables Event Sourcing while keeping operational data independent from historical logs.</p>
+                                </div>
+
+                                <div class="technical-item">
+                                    <h5>2. Request Pipelining & Selective Transactions</h5>
+                                    <div class="technical-images-grid">
+                                        <img loading="lazy" src="SamraaAlYaman Not all commands needed for the events logic.png" alt="Selective Transactions 1">
+                                        <img loading="lazy" src="SamraaAlYaman how events trainsaction is started for only trainsaction needed commands.png" alt="Selective Transactions 2">
                                     </div>
-                                    <div class="screenshot-wrapper">
-                                        <div class="screenshot-placeholder">Event Sourcing Flow / API Response</div>
-                                    </div>
+                                    <p class="project-desc">Explain how MediatR Pipeline Behaviors use a marker interface to determine whether a command requires event synchronization.<br><br>Transactions are started only when necessary, reducing unnecessary locking and improving throughput.</p>
+                                </div>
+
+                                <div class="technical-item">
+                                    <h5>3. Fault-Tolerant Eventual Consistency Middleware</h5>
+                                    <img loading="lazy" src="SamraaAlYaman EventualConsistencyMiddleware.png" alt="Eventual Consistency Middleware">
+                                    <p class="project-desc">Explain how the middleware publishes pending events after the HTTP response completes.<br><br>If synchronization fails, it automatically performs rollback logic and stores failure information inside ErrorAudits for future recovery.</p>
+                                </div>
+
+                                <div class="technical-item">
+                                    <h5>4. Soft Foreign Key Cascade Simulation</h5>
+                                    <img loading="lazy" src="SamraaAlYaman Custom Price being removed after the branch has been removed.png" alt="Soft Foreign Key">
+                                    <p class="project-desc">Explain how dependent records are eventually deleted through domain events instead of using database cascade deletes, preventing relational lockups in distributed workflows.</p>
+                                </div>
+
+                                <div class="technical-item">
+                                    <h5>5. Domain Event Generation & Audit Tracking</h5>
+                                    <img loading="lazy" src="SamraaAlYaman how internally the audit record is being created.png" alt="Audit Tracking">
+                                    <p class="project-desc">Explain how entities generate domain events internally while simultaneously creating audit records, ensuring immutable historical tracking for every business state transition.</p>
                                 </div>
                             </div>
 
                             <div class="project-links">
-                                <a href="https://github.com/AhmedKhZain/SamraaAlYaman" target="_blank" class="btn btn-primary btn-sm">View Repository</a>
+                                <a href="https://github.com/AhmedKhZain/SamraaAlYaman" target="_blank"
+                                    class="btn btn-primary btn-sm">View Repository</a>
                             </div>
                         </div>
                     </div>
@@ -135,27 +581,34 @@
                     </div>
                     <div class="project-content-expandable">
                         <div class="project-inner-body">
-                            <p class="project-desc">A modular, fully functional REST API engineered for medical centers, secure medical handling, and automated processing.</p>
+                            <p class="project-desc">A modular, fully functional REST API engineered for medical centers,
+                                secure medical handling, and automated processing.</p>
                             <ul class="project-features">
-                                <li>Structured decoupled core components utilizing dynamic Repository and Unit of Work patterns.</li>
-                                <li>Integrated secure role-based access controls (RBAC) and data authorization systems.</li>
-                                <li>Integrated full enterprise Stripe Payment Gateway for digital checkout processing.</li>
+                                <li>Structured decoupled core components utilizing dynamic Repository and Unit of Work
+                                    patterns.</li>
+                                <li>Integrated secure role-based access controls (RBAC) and data authorization systems.
+                                </li>
+                                <li>Integrated full enterprise Stripe Payment Gateway for digital checkout processing.
+                                </li>
                             </ul>
 
                             <div class="project-screenshots">
                                 <h4 class="screenshot-title">Project Structure & Implementation</h4>
                                 <div class="screenshots-grid">
                                     <div class="screenshot-wrapper">
-                                        <div class="screenshot-placeholder">Clean Architecture Layers / Folder Structure</div>
+                                        <div class="screenshot-placeholder">Clean Architecture Layers / Folder Structure
+                                        </div>
                                     </div>
                                     <div class="screenshot-wrapper">
-                                        <div class="screenshot-placeholder">Stripe Integration Service / Swagger UI Docs</div>
+                                        <div class="screenshot-placeholder">Stripe Integration Service / Swagger UI Docs
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="project-links">
-                                <a href="https://github.com/AhmedKhZain/HealLink" target="_blank" class="btn btn-primary btn-sm">View Repository</a>
+                                <a href="https://github.com/AhmedKhZain/HealLink" target="_blank"
+                                    class="btn btn-primary btn-sm">View Repository</a>
                             </div>
                         </div>
                     </div>
@@ -171,10 +624,12 @@
                     </div>
                     <div class="project-content-expandable">
                         <div class="project-inner-body">
-                            <p class="project-desc">A highly scalable team operations tool built to manage high-throughput resource allocations safely.</p>
+                            <p class="project-desc">A highly scalable team operations tool built to manage
+                                high-throughput resource allocations safely.</p>
                             <ul class="project-features">
                                 <li>Constructed dedicated database abstractions via lightweight Dapper queries.</li>
-                                <li>Designed granular, dynamic security layers protecting task manipulation within cross-functional teams.</li>
+                                <li>Designed granular, dynamic security layers protecting task manipulation within
+                                    cross-functional teams.</li>
                             </ul>
 
                             <div class="project-screenshots">
@@ -187,7 +642,8 @@
                             </div>
 
                             <div class="project-links">
-                                <a href="https://github.com/AhmedKhZain/DoDone" target="_blank" class="btn btn-primary btn-sm">View Repository</a>
+                                <a href="https://github.com/AhmedKhZain/DoDone" target="_blank"
+                                    class="btn btn-primary btn-sm">View Repository</a>
                             </div>
                         </div>
                     </div>
@@ -203,14 +659,16 @@
                     </div>
                     <div class="project-content-expandable">
                         <div class="project-inner-body">
-                            <p class="project-desc">A fast, custom-tailored search engine built directly within the .NET environment to scan parsed web indexes.</p>
+                            <p class="project-desc">A fast, custom-tailored search engine built directly within the .NET
+                                environment to scan parsed web indexes.</p>
                             <ul class="project-features">
                                 <li>Successfully executed scraping models for over 160K unique web indexes.</li>
                                 <li>Engineered strict indexing schemas and fast keyword retrieval routines.</li>
                             </ul>
 
                             <div class="project-links">
-                                <a href="https://github.com/AhmedKhZain/G-Search" target="_blank" class="btn btn-primary btn-sm">View Repository</a>
+                                <a href="https://github.com/AhmedKhZain/G-Search" target="_blank"
+                                    class="btn btn-primary btn-sm">View Repository</a>
                             </div>
                         </div>
                     </div>
@@ -223,11 +681,12 @@
             <h2 class="section-title">Connect With Me</h2>
             <div class="contact-container">
                 <div class="contact-info">
-                    <p>I am looking for professional opportunities where I can apply my engineering methodologies. Let's build something solid.</p>
+                    <p>I am looking for professional opportunities where I can apply my engineering methodologies. Let's
+                        build something solid.</p>
                     <p><strong>Location:</strong> Egypt</p>
-                    
+
                     <div class="contact-item">
-                        <span class="contact-label"><i class="fa-solid fa-envelope icon-mail"></i> Email:</span> 
+                        <span class="contact-label"><i class="fa-solid fa-envelope icon-mail"></i> Email:</span>
                         <a href="mailto:ahmed.kh.zain2156@gmail.com" class="qr-hover-link">
                             ahmed.kh.zain2156@gmail.com
                             <div class="qr-dropdown">
@@ -236,9 +695,10 @@
                             </div>
                         </a>
                     </div>
-                    
+
                     <div class="contact-item">
-                        <span class="contact-label"><i class="fa-brands fa-whatsapp icon-whatsapp"></i> WhatsApp / Phone:</span> 
+                        <span class="contact-label"><i class="fa-brands fa-whatsapp icon-whatsapp"></i> WhatsApp /
+                            Phone:</span>
                         <a href="https://wa.me/201094281656" target="_blank" class="qr-hover-link">
                             +20 109 428 1656
                             <div class="qr-dropdown">
@@ -247,9 +707,9 @@
                             </div>
                         </a>
                     </div>
-                    
+
                     <div class="contact-item">
-                        <span class="contact-label"><i class="fa-brands fa-linkedin icon-linkedin"></i> LinkedIn:</span> 
+                        <span class="contact-label"><i class="fa-brands fa-linkedin icon-linkedin"></i> LinkedIn:</span>
                         <a href="https://www.linkedin.com/in/ahmed-k-zain2156" target="_blank" class="qr-hover-link">
                             linkedin.com/in/ahmed-k-zain2156
                             <div class="qr-dropdown">
@@ -260,7 +720,7 @@
                     </div>
 
                     <div class="contact-item">
-                        <span class="contact-label"><i class="fa-brands fa-github icon-github"></i> GitHub:</span> 
+                        <span class="contact-label"><i class="fa-brands fa-github icon-github"></i> GitHub:</span>
                         <a href="https://github.com/AhmedKhZain" target="_blank" class="qr-hover-link">
                             github.com/AhmedKhZain
                             <div class="qr-dropdown">
@@ -273,10 +733,9 @@
             </div>
         </section>
 
-<!-- تأكد من وجود مكتبة الـ QR Code والملف الخاص بك قبل إغلاق الـ body مباشرة -->
-<script src="js/qrcode.min.js"></script>
-<script src="js/script.js"></script>
-
+        <!-- تأكد من وجود مكتبة الـ QR Code والملف الخاص بك قبل إغلاق الـ body مباشرة -->
+        <script src="js/qrcode.min.js"></script>
+        <script src="js/script.js"></script>
 
     </main>
 
@@ -284,6 +743,6 @@
         <p>&copy; 2026 Ahmed Khalid Zain. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
+
 </html>
