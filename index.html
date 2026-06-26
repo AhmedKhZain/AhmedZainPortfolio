@@ -526,47 +526,61 @@ public class OrderRepository
                                 <span class="skill-tag">Role-Based Authorization</span>
                             </div>
 
-                            <div class="technical-breakdown" style="margin-top: 2rem;">
-                                <h4 class="screenshot-title">Technical Breakdown</h4>
-                                
-                                <div class="technical-item">
-                                    <h5>1. Database Schema Overview</h5>
-                                    <img loading="lazy" src="SamraaAlYamanDb.png" alt="Database Schema">
-                                    <p class="project-desc">Show the relational database architecture supporting event-driven workflows.<br><br>Highlight the separation between operational tables and audit/event tables and explain how this enables Event Sourcing while keeping operational data independent from historical logs.</p>
-                                </div>
-
-                                <div class="technical-item">
-                                    <h5>2. Request Pipelining & Selective Transactions</h5>
-                                    <div class="technical-images-grid">
-                                        <img loading="lazy" src="SamraaAlYaman Not all commands needed for the events logic.png" alt="Selective Transactions 1">
-                                        <img loading="lazy" src="SamraaAlYaman how events trainsaction is started for only trainsaction needed commands.png" alt="Selective Transactions 2">
-                                    </div>
-                                    <p class="project-desc">Explain how MediatR Pipeline Behaviors use a marker interface to determine whether a command requires event synchronization.<br><br>Transactions are started only when necessary, reducing unnecessary locking and improving throughput.</p>
-                                </div>
-
-                                <div class="technical-item">
-                                    <h5>3. Fault-Tolerant Eventual Consistency Middleware</h5>
-                                    <img loading="lazy" src="SamraaAlYaman EventualConsistencyMiddleware.png" alt="Eventual Consistency Middleware">
-                                    <p class="project-desc">Explain how the middleware publishes pending events after the HTTP response completes.<br><br>If synchronization fails, it automatically performs rollback logic and stores failure information inside ErrorAudits for future recovery.</p>
-                                </div>
-
-                                <div class="technical-item">
-                                    <h5>4. Soft Foreign Key Cascade Simulation</h5>
-                                    <img loading="lazy" src="SamraaAlYaman Custom Price being removed after the branch has been removed.png" alt="Soft Foreign Key">
-                                    <p class="project-desc">Explain how dependent records are eventually deleted through domain events instead of using database cascade deletes, preventing relational lockups in distributed workflows.</p>
-                                </div>
-
-                                <div class="technical-item">
-                                    <h5>5. Domain Event Generation & Audit Tracking</h5>
-                                    <img loading="lazy" src="SamraaAlYaman how internally the audit record is being created.png" alt="Audit Tracking">
-                                    <p class="project-desc">Explain how entities generate domain events internally while simultaneously creating audit records, ensuring immutable historical tracking for every business state transition.</p>
-                                </div>
-                            </div>
-
-                            <div class="project-links">
+                            <div class="project-links" style="margin-top: 1.5rem; margin-bottom: 2rem;">
                                 <a href="https://github.com/AhmedKhZain/SamraaAlYaman" target="_blank"
                                     class="btn btn-primary btn-sm">View Repository</a>
                             </div>
+
+                            <div class="technical-breakdown">
+                                <h4 class="screenshot-title">Technical Breakdown</h4>
+                                
+                                <div class="technical-scroll-panel">
+                                    <div class="technical-item">
+                                        <h5>1. Request Pipelining & Selective Transactions</h5>
+                                        <div class="technical-images-grid">
+                                            <div class="image-hover-wrapper">
+                                                <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                                <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman Not all commands needed for the events logic.png" alt="Selective Transactions 1">
+                                            </div>
+                                            <div class="image-hover-wrapper">
+                                                <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                                <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman how events trainsaction is started for only trainsaction needed commands.png" alt="Selective Transactions 2">
+                                            </div>
+                                        </div>
+                                        <p class="project-desc">Explain how MediatR Pipeline Behaviors use a marker interface to determine whether a command requires event synchronization.<br><br>Transactions are started only when necessary, reducing unnecessary locking and improving throughput.</p>
+                                    </div>
+
+                                    <div class="technical-item">
+                                        <h5>2. Fault-Tolerant Eventual Consistency Middleware</h5>
+                                        <div class="image-hover-wrapper">
+                                            <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman EventualConsistencyMiddleware.png" alt="Eventual Consistency Middleware">
+                                        </div>
+                                        <p class="project-desc">Explain how the middleware publishes pending events after the HTTP response completes.<br><br>If synchronization fails, it automatically performs rollback logic and stores failure information inside ErrorAudits for future recovery.</p>
+                                    </div>
+
+                                    <div class="technical-item">
+                                        <h5>3. Soft Foreign Key Cascade Simulation</h5>
+                                        <div class="image-hover-wrapper">
+                                            <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman Custom Price being removed after the branch has been removed.png" alt="Soft Foreign Key">
+                                        </div>
+                                        <p class="project-desc">Explain how dependent records are eventually deleted through domain events instead of using database cascade deletes, preventing relational lockups in distributed workflows.</p>
+                                    </div>
+
+                                    <div class="technical-item">
+                                        <h5>4. Domain Event Generation & Audit Tracking</h5>
+                                        <div class="image-hover-wrapper">
+                                            <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman how internally the audit record is being created.png" alt="Audit Tracking">
+                                        </div>
+                                        <p class="project-desc">Explain how entities generate domain events internally while simultaneously creating audit records, ensuring immutable historical tracking for every business state transition.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div style="height: 2.5rem;"></div>
                         </div>
                     </div>
                 </div>
@@ -592,6 +606,11 @@ public class OrderRepository
                                 </li>
                             </ul>
 
+                            <div class="project-links" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+                                <a href="https://github.com/AhmedKhZain/HealLink" target="_blank"
+                                    class="btn btn-primary btn-sm">View Repository</a>
+                            </div>
+
                             <div class="project-screenshots">
                                 <h4 class="screenshot-title">Project Structure & Implementation</h4>
                                 <div class="screenshots-grid">
@@ -604,11 +623,6 @@ public class OrderRepository
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="https://github.com/AhmedKhZain/HealLink" target="_blank"
-                                    class="btn btn-primary btn-sm">View Repository</a>
                             </div>
                         </div>
                     </div>
@@ -632,6 +646,11 @@ public class OrderRepository
                                     cross-functional teams.</li>
                             </ul>
 
+                            <div class="project-links" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+                                <a href="https://github.com/AhmedKhZain/DoDone" target="_blank"
+                                    class="btn btn-primary btn-sm">View Repository</a>
+                            </div>
+
                             <div class="project-screenshots">
                                 <h4 class="screenshot-title">Database & Authorization Logic</h4>
                                 <div class="screenshots-grid">
@@ -639,11 +658,6 @@ public class OrderRepository
                                         <div class="screenshot-placeholder">Dapper Repository Queries</div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="https://github.com/AhmedKhZain/DoDone" target="_blank"
-                                    class="btn btn-primary btn-sm">View Repository</a>
                             </div>
                         </div>
                     </div>
@@ -666,7 +680,7 @@ public class OrderRepository
                                 <li>Engineered strict indexing schemas and fast keyword retrieval routines.</li>
                             </ul>
 
-                            <div class="project-links">
+                            <div class="project-links" style="margin-top: 1.5rem; margin-bottom: 2rem;">
                                 <a href="https://github.com/AhmedKhZain/G-Search" target="_blank"
                                     class="btn btn-primary btn-sm">View Repository</a>
                             </div>
@@ -743,6 +757,13 @@ public class OrderRepository
         <p>&copy; 2026 Ahmed Khalid Zain. All rights reserved.</p>
     </footer>
 
+    <!-- Fullscreen Image Modal -->
+    <div id="image-modal" class="image-modal">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="Enlarged view">
+        </div>
+        <div class="modal-instructions">Scroll to zoom &bull; Drag to pan</div>
+    </div>
 </body>
-
 </html>

@@ -231,4 +231,87 @@ document.addEventListener('DOMContentLoaded', () => {
             resetSkillFilter();
         }
     });
+
+    // 4. Image Lightbox Modal with Zoom & Pan
+    const imageModal = document.getElementById('image-modal');
+    const modalImage = document.getElementById('modal-image');
+    const modalClose = document.querySelector('.modal-close');
+    const viewerContainers = document.querySelectorAll('.image-hover-wrapper');
+
+    let currentZoom = 1;
+    let isDragging = false;
+    let startX, startY, translateX = 0, translateY = 0;
+
+    const updateTransform = () => {
+        modalImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentZoom})`;
+    };
+
+    const resetModalState = () => {
+        currentZoom = 1;
+        translateX = 0;
+        translateY = 0;
+        updateTransform();
+    };
+
+    if (imageModal && modalImage) {
+        viewerContainers.forEach(container => {
+            const img = container.querySelector('img');
+            if (img) {
+                container.addEventListener('click', () => {
+                    modalImage.src = img.src;
+                    resetModalState();
+                    imageModal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                });
+            }
+        });
+
+        const closeModal = () => {
+            imageModal.classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => { modalImage.src = ''; }, 200); // Clear image after transition
+        };
+
+        modalClose.addEventListener('click', closeModal);
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal || e.target.classList.contains('modal-content')) {
+                closeModal();
+            }
+        });
+
+        // Zoom logic
+        imageModal.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const zoomStep = 0.1;
+            if (e.deltaY < 0) {
+                currentZoom = Math.min(currentZoom + zoomStep, 4); // Max zoom 4x
+            } else {
+                currentZoom = Math.max(currentZoom - zoomStep, 0.5); // Min zoom 0.5x
+            }
+            updateTransform();
+        }, { passive: false });
+
+        // Pan logic
+        modalImage.addEventListener('mousedown', (e) => {
+            if (currentZoom > 1) {
+                e.preventDefault(); // prevent default image drag behavior
+                isDragging = true;
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                modalImage.style.cursor = 'grabbing';
+            }
+        });
+
+        window.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            translateX = e.clientX - startX;
+            translateY = e.clientY - startY;
+            updateTransform();
+        });
+
+        window.addEventListener('mouseup', () => {
+            isDragging = false;
+            modalImage.style.cursor = 'grab';
+        });
+    }
 });
