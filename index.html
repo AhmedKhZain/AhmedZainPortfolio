@@ -443,6 +443,7 @@ public class OrderRepository
                     <div class="skill-tags">
                         <span class="tag">RabbitMQ</span>
                         <span class="tag">Docker</span>
+                        <span class="tag">SinalR & WebSoket</span>
                         <span class="tag">In-Memory Caching</span>
                         <span class="tag">Redis</span>
                     </div>
@@ -523,7 +524,6 @@ public class OrderRepository
                                 <span class="skill-tag">Event Sourcing</span>
                                 <span class="skill-tag">Eventual Consistency</span>
                                 <span class="skill-tag">Soft Foreign Keys</span>
-                                <span class="skill-tag">Role-Based Authorization</span>
                             </div>
 
                             <div class="project-links" style="margin-top: 1.5rem; margin-bottom: 2rem;">
@@ -540,11 +540,11 @@ public class OrderRepository
                                         <div class="technical-images-grid">
                                             <div class="image-hover-wrapper">
                                                 <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
-                                                <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman Not all commands needed for the events logic.png" alt="Selective Transactions 1">
+                                                <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman Not all commands needed for the events logic.png" alt="Selective Transactions 1">
                                             </div>
                                             <div class="image-hover-wrapper">
                                                 <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
-                                                <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman how events trainsaction is started for only trainsaction needed commands.png" alt="Selective Transactions 2">
+                                                <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman how events trainsaction is started for only trainsaction needed commands.png" alt="Selective Transactions 2">
                                             </div>
                                         </div>
                                         <p class="project-desc">Explain how MediatR Pipeline Behaviors use a marker interface to determine whether a command requires event synchronization.<br><br>Transactions are started only when necessary, reducing unnecessary locking and improving throughput.</p>
@@ -554,7 +554,7 @@ public class OrderRepository
                                         <h5>2. Fault-Tolerant Eventual Consistency Middleware</h5>
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
-                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman EventualConsistencyMiddleware.png" alt="Eventual Consistency Middleware">
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman EventualConsistencyMiddleware.png" alt="Eventual Consistency Middleware">
                                         </div>
                                         <p class="project-desc">Explain how the middleware publishes pending events after the HTTP response completes.<br><br>If synchronization fails, it automatically performs rollback logic and stores failure information inside ErrorAudits for future recovery.</p>
                                     </div>
@@ -563,7 +563,7 @@ public class OrderRepository
                                         <h5>3. Soft Foreign Key Cascade Simulation</h5>
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
-                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman Custom Price being removed after the branch has been removed.png" alt="Soft Foreign Key">
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman Custom Price being removed after the branch has been removed.png" alt="Soft Foreign Key">
                                         </div>
                                         <p class="project-desc">Explain how dependent records are eventually deleted through domain events instead of using database cascade deletes, preventing relational lockups in distributed workflows.</p>
                                     </div>
@@ -572,7 +572,7 @@ public class OrderRepository
                                         <h5>4. Domain Event Generation & Audit Tracking</h5>
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
-                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman how internally the audit record is being created.png" alt="Audit Tracking">
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman how internally the audit record is being created.png" alt="Audit Tracking">
                                         </div>
                                         <p class="project-desc">Explain how entities generate domain events internally while simultaneously creating audit records, ensuring immutable historical tracking for every business state transition.</p>
                                     </div>
