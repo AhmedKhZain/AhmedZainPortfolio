@@ -487,26 +487,17 @@ public class OrderRepository
                     <div class="project-content-expandable">
                         <div class="project-inner-body">
                             <p class="project-desc">
-                                Samraa AlYaman is a high-performance, enterprise-grade E-commerce platform designed around distributed system principles.<br><br>
-                                The primary engineering goals of the platform are:
-                            </p>
-                            <ul class="project-features" style="margin-bottom: 1rem;">
-                                <li>Absolute data consistency</li>
-                                <li>High-throughput query performance</li>
-                                <li>Reliable asynchronous workflows</li>
-                                <li>Complex business domain modeling</li>
-                            </ul>
-                            <p class="project-desc" style="margin-bottom: 1.5rem;">
-                                The project demonstrates advanced backend engineering rather than simply CRUD operations.
+                                Samraa AlYaman is a high-performance, enterprise-grade E-commerce platform designed around distributed system principles. The primary engineering goals of the platform are absolute data consistency, high-throughput query performance, reliable asynchronous workflows, and complex business domain modeling.
                             </p>
 
-                            <h4 class="screenshot-title" style="margin-bottom: 0.5rem;">Key Engineering Highlights</h4>
+                            <h4 class="screenshot-title" style="margin-bottom: 0.5rem;">Project Core &amp; Engineering Overview</h4>
                             <ul class="project-features">
-                                <li>Designed a distributed Event Sourcing workflow for complete historical state tracking.</li>
-                                <li>Implemented Eventual Consistency with automatic rollback mechanisms for synchronization failures.</li>
-                                <li>Built a hybrid persistence layer using EF Core for writes and Dapper for high-performance reads.</li>
-                                <li>Designed an advanced audit logging subsystem capable of reconstructing historical business events.</li>
-                                <li>Implemented a Soft Foreign Key strategy to safely simulate cascading deletes without database locking.</li>
+                                <li><strong>Distributed Event Sourcing:</strong> Designed a complete historical state tracking workflow for full auditability of every business operation.</li>
+                                <li><strong>Eventual Consistency Middleware:</strong> Fault-tolerant pipeline that publishes domain events after the HTTP response completes, with automatic rollback on failure.</li>
+                                <li><strong>Hybrid Persistence Layer:</strong> EF Core for transactional writes and Dapper for high-performance read queries.</li>
+                                <li><strong>Selective Transaction Strategy:</strong> MediatR pipeline behaviors use marker interfaces to start transactions only when event synchronization is needed.</li>
+                                <li><strong>Soft Foreign Key Cascade:</strong> Simulates cascading deletes through domain events instead of database-level cascade, preventing relational lockups.</li>
+                                <li><strong>Advanced Audit Subsystem:</strong> Entities generate domain events while simultaneously creating immutable audit records for every business state transition.</li>
                             </ul>
 
                             <div class="project-skills">
@@ -533,52 +524,85 @@ public class OrderRepository
                                     class="btn btn-primary btn-sm">View Repository</a>
                             </div>
 
-                            <div class="technical-breakdown">
-                                <h4 class="screenshot-title">Technical Breakdown</h4>
-                                
-                                <div class="technical-scroll-panel">
-                                    <div class="technical-item">
-                                        <h5>1. Request Pipelining & Selective Transactions</h5>
-                                        <div class="technical-images-grid">
-                                            <div class="image-hover-wrapper">
-                                                <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
-                                                <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman Not all commands needed for the events logic.png" alt="Selective Transactions 1">
-                                            </div>
-                                            <div class="image-hover-wrapper">
-                                                <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
-                                                <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman how events trainsaction is started for only trainsaction needed commands.png" alt="Selective Transactions 2">
-                                            </div>
+                            <div class="project-screenshots">
+                                <h4 class="screenshot-title">Architecture &amp; Implementation Gallery</h4>
+                                <div class="healink-gallery-grid">
+                                    <div class="healink-gallery-item">
+                                        <div class="image-hover-wrapper">
+                                            <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman Not all commands needed for the events logic.png" alt="Selective Transactions 1">
                                         </div>
-                                        <p class="project-desc">Explain how MediatR Pipeline Behaviors use a marker interface to determine whether a command requires event synchronization.<br><br>Transactions are started only when necessary, reducing unnecessary locking and improving throughput.</p>
+                                        <div class="healink-gallery-caption">Selective Command Transactions &mdash; Marker interface pattern prevents unnecessary transaction overhead by starting database transactions only for commands that raise domain events.</div>
                                     </div>
-
-                                    <div class="technical-item">
-                                        <h5>2. Fault-Tolerant Eventual Consistency Middleware</h5>
+                                    <div class="healink-gallery-item">
+                                        <div class="image-hover-wrapper">
+                                            <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman how events trainsaction is started for only trainsaction needed commands.png" alt="Selective Transactions 2">
+                                        </div>
+                                        <div class="healink-gallery-caption">Transaction Pipeline Flow &mdash; MediatR pipeline behavior inspects command types at runtime to conditionally wrap execution in a transaction scope.</div>
+                                    </div>
+                                    <div class="healink-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman EventualConsistencyMiddleware.png" alt="Eventual Consistency Middleware">
                                         </div>
-                                        <p class="project-desc">Explain how the middleware publishes pending events after the HTTP response completes.<br><br>If synchronization fails, it automatically performs rollback logic and stores failure information inside ErrorAudits for future recovery.</p>
+                                        <div class="healink-gallery-caption">Fault-Tolerant Eventual Consistency Middleware &mdash; Publishes pending domain events post-response and performs automatic rollback with ErrorAudit storage on failure.</div>
                                     </div>
-
-                                    <div class="technical-item">
-                                        <h5>3. Soft Foreign Key Cascade Simulation</h5>
+                                    <div class="healink-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman Custom Price being removed after the branch has been removed.png" alt="Soft Foreign Key">
                                         </div>
-                                        <p class="project-desc">Explain how dependent records are eventually deleted through domain events instead of using database cascade deletes, preventing relational lockups in distributed workflows.</p>
+                                        <div class="healink-gallery-caption">Soft Foreign Key Cascade Simulation &mdash; Dependent records are eventually deleted through domain events instead of database cascade deletes, preventing distributed lockups.</div>
                                     </div>
-
-                                    <div class="technical-item">
-                                        <h5>4. Domain Event Generation & Audit Tracking</h5>
+                                    <div class="healink-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman how internally the audit record is being created.png" alt="Audit Tracking">
                                         </div>
-                                        <p class="project-desc">Explain how entities generate domain events internally while simultaneously creating audit records, ensuring immutable historical tracking for every business state transition.</p>
+                                        <div class="healink-gallery-caption">Domain Event Generation &amp; Audit Tracking &mdash; Entities generate domain events internally while simultaneously creating immutable audit records for every business state transition.</div>
                                     </div>
+                                </div>
+                            </div>
 
+                            <div class="healink-note">
+                                <div class="healink-note-header">
+                                    <span class="healink-note-badge"><i class="fa-solid fa-note-sticky"></i> Samraa AlYaman Note</span>
+                                    <a href="https://github.com/AhmedKhZain/Smraa_AlYaman" target="_blank" class="healink-note-repo"><i class="fa-brands fa-github"></i> Smraa_AlYaman</a>
+                                </div>
+                                <div class="healink-note-body">
+                                    <div class="healink-note-block">
+                                        <h5>Project Core</h5>
+                                        <p>An Enterprise-Grade E-Commerce API Engineered for Distributed Consistency, High-Throughput Queries, and Event-Driven Workflows.</p>
+                                    </div>
+                                    <div class="healink-note-block">
+                                        <h5>Architecture Pillars</h5>
+                                        <ul>
+                                            <li>Clean Architecture &mdash; Domain-Driven with Inversion of Control</li>
+                                            <li>SQL Server &mdash; EF Core for Writes, Dapper for Reads</li>
+                                            <li>CQRS &amp; MediatR &mdash; Pipeline Behaviors with Selective Transactions</li>
+                                            <li>Eventual Consistency &mdash; Fault-Tolerant Middleware with Auto-Rollback</li>
+                                        </ul>
+                                    </div>
+                                    <div class="healink-note-block">
+                                        <h5>Technologies Used</h5>
+                                        <div class="healink-note-tags">
+                                            <span class="tag">C#</span>
+                                            <span class="tag">ASP.NET Core API</span>
+                                            <span class="tag">EF Core</span>
+                                            <span class="tag">Dapper</span>
+                                            <span class="tag">SQL Server</span>
+                                            <span class="tag">Clean Architecture</span>
+                                            <span class="tag">CQRS</span>
+                                            <span class="tag">MediatR</span>
+                                            <span class="tag">Unit of Work</span>
+                                            <span class="tag">Repository Pattern</span>
+                                            <span class="tag">Domain-Driven Design</span>
+                                            <span class="tag">Event Sourcing</span>
+                                            <span class="tag">Result Pattern</span>
+                                            <span class="tag">Soft Foreign Keys</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
