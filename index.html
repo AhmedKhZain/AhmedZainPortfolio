@@ -517,6 +517,8 @@ public class OrderRepository
                                 <span class="skill-tag">Dapper</span>
                                 <span class="skill-tag">SQL Server</span>
                                 <span class="skill-tag">Clean Architecture</span>
+                                <span class="skill-tag">Unit of Work</span>
+                                <span class="skill-tag">Repository Pattern</span>
                                 <span class="skill-tag">Domain-Driven Design (DDD)</span>
                                 <span class="skill-tag">CQRS</span>
                                 <span class="skill-tag">MediatR</span>
@@ -595,16 +597,34 @@ public class OrderRepository
                     </div>
                     <div class="project-content-expandable">
                         <div class="project-inner-body">
-                            <p class="project-desc">A modular, fully functional REST API engineered for medical centers,
-                                secure medical handling, and automated processing.</p>
+                            <p class="project-desc">
+                                An Enterprise-Grade REST API Engineered for Secure Medical Operations, Care-Tracking Compliance, and Patient-Guardian Workflows.
+                            </p>
+
+                            <h4 class="screenshot-title" style="margin-bottom: 0.5rem;">Project Core & Security Overview</h4>
                             <ul class="project-features">
-                                <li>Structured decoupled core components utilizing dynamic Repository and Unit of Work
-                                    patterns.</li>
-                                <li>Integrated secure role-based access controls (RBAC) and data authorization systems.
-                                </li>
-                                <li>Integrated full enterprise Stripe Payment Gateway for digital checkout processing.
-                                </li>
+                                <li><strong>Patient-Centric Mission:</strong> Bridges doctors, patients, and guardians through secure medical pipelines, prescription synchronization, and real-time reminders.</li>
+                                <li><strong>Decoupled Architecture:</strong> Built using ASP.NET Core and Clean Architecture to isolate mechanical concerns from domain layers.</li>
+                                <li><strong>Patient-Guardian Security Module:</strong> Enables caretakers to oversee doctor-prescribed medication schedules and receive compliance updates.</li>
+                                <li><strong>Role-Based Access Control (RBAC):</strong> Enforces strict authorization policies over patient health information, billing execution, and system pathways.</li>
+                                <li><strong>Secure Payment Infrastructure:</strong> Integrates full Stripe Gateway operations utilizing robust transactional consistency rules.</li>
                             </ul>
+
+                            <div class="project-skills">
+                                <span class="skill-tag">C#</span>
+                                <span class="skill-tag">ASP.NET Core API</span>
+                                <span class="skill-tag">EF Core</span>
+                                <span class="skill-tag">SQL Server</span>
+                                <span class="skill-tag">Clean Architecture</span>
+  <span class="skill-tag">Unit of Work</span>
+                                <span class="skill-tag">Repository Pattern</span>
+                                <span class="skill-tag">CQRS</span>
+                                <span class="skill-tag">MediatR</span>
+                                <span class="skill-tag">Stripe</span>
+                                <span class="skill-tag">Options Pattern</span>
+                                <span class="skill-tag">Result Pattern</span>
+                                <span class="skill-tag">Role-Based Authorization</span>
+                            </div>
 
                             <div class="project-links" style="margin-top: 1.5rem; margin-bottom: 2rem;">
                                 <a href="https://github.com/AhmedKhZain/HealLink" target="_blank"
@@ -612,18 +632,84 @@ public class OrderRepository
                             </div>
 
                             <div class="project-screenshots">
-                                <h4 class="screenshot-title">Project Structure & Implementation</h4>
-                                <div class="screenshots-grid">
-                                    <div class="screenshot-wrapper">
-                                        <div class="screenshot-placeholder">Clean Architecture Layers / Folder Structure
+                                <h4 class="screenshot-title">Architecture & Implementation Gallery</h4>
+                                <div class="healink-gallery-grid">
+                                    <div class="healink-gallery-item">
+                                        <div class="image-hover-wrapper">
+                                            <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/HealLink/High-Level Architectural Design (Clean Architecture).png" alt="High-Level Architectural Design showing Clean Architecture layers">
                                         </div>
+                                        <div class="healink-gallery-caption">Clean Architecture Blueprint &mdash; Separation of Concerns enforcing boundary rules with dependencies pointing inward toward the core Domain Model.</div>
                                     </div>
-                                    <div class="screenshot-wrapper">
-                                        <div class="screenshot-placeholder">Stripe Integration Service / Swagger UI Docs
+                                    <div class="healink-gallery-item">
+                                        <div class="image-hover-wrapper">
+                                            <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/HealLink/Entity Relationship Diagram &amp; Relational Database Design.png" alt="Entity Relationship Diagram showing relational database design">
+                                        </div>
+                                        <div class="healink-gallery-caption">Relational Database Design &mdash; Highly normalized ERD mapping multi-user workflows with foreign key relationships for Patients, Doctors, Payments, Prescriptions, and PatientGuardians.</div>
+                                    </div>
+                                    <div class="healink-gallery-item">
+                                        <div class="image-hover-wrapper">
+                                            <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/HealLink/Secure Stripe Integration &amp; Atomicity via Unit of Work.png" alt="Secure Stripe Integration and atomic Unit of Work transactions">
+                                        </div>
+                                        <div class="healink-gallery-caption">Secure Stripe Integration &amp; Atomicity via Unit of Work &mdash; Handles Stripe Checkout asynchronously, guaranteeing database writes and external API calls persist or fail together.</div>
+                                    </div>
+                                    <div class="healink-gallery-item">
+                                        <div class="image-hover-wrapper">
+                                            <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/HealLink/Doctor-Side Request Controller Operations.png" alt="Doctor-side request controller operations with MediatR pipeline">
+                                        </div>
+                                        <div class="healink-gallery-caption">Doctor Request Controllers &mdash; Decoupled Presentation Layer using MediatR pipeline routing to separate HTTP requests into isolated Commands and Queries.</div>
+                                    </div>
+                                    <div class="healink-gallery-item">
+                                        <div class="image-hover-wrapper">
+                                            <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
+                                            <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/HealLink/Patient-Side Subscriptions &amp; Query Pipelines.png" alt="Patient-side subscriptions and query pipelines">
+                                        </div>
+                                        <div class="healink-gallery-caption">Patient Request Pipelines &mdash; Asynchronous Command Flow protecting system contracts by routing requests without exposing underlying Domain Models to API response contracts.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="healink-note">
+                                <div class="healink-note-header">
+                                    <span class="healink-note-badge"><i class="fa-solid fa-note-sticky"></i> HealLink Note</span>
+                                    <a href="https://github.com/AhmedKhZain/Smraa_AlYaman" target="_blank" class="healink-note-repo"><i class="fa-brands fa-github"></i> Smraa_AlYaman</a>
+                                </div>
+                                <div class="healink-note-body">
+                                    <div class="healink-note-block">
+                                        <h5>Project Core</h5>
+                                        <p>An Enterprise-Grade REST API Engineered for Secure Medical Operations, Care-Tracking Compliance, and Patient-Guardian Workflows.</p>
+                                    </div>
+                                    <div class="healink-note-block">
+                                        <h5>Architecture Pillars</h5>
+                                        <ul>
+                                            <li>Clean Architecture &mdash; Domain-Driven with Inversion of Control</li>
+                                            <li>SQL Server &mdash; EF Core with full Normalization</li>
+                                            <li>Stripe SDK &mdash; Unit of Work with Transactional Atomicity</li>
+                                            <li>Web API Controllers &mdash; MediatR Pipeline Routing</li>
+                                        </ul>
+                                    </div>
+                                    <div class="healink-note-block">
+                                        <h5>Technologies Used</h5>
+                                        <div class="healink-note-tags">
+                                            <span class="tag">EF Core</span>
+                                            <span class="tag">Stripe</span>
+                                            <span class="tag">Options Pattern</span>
+                                            <span class="tag">Result Pattern</span>
+                                            <span class="tag">Clean Architecture</span>
+                                            <span class="tag">ASP.NET Core API</span>
+                                            <span class="tag">C#</span>
+                                            <span class="tag">SQL Server</span>
+                                            <span class="tag">CQRS</span>
+                                            <span class="tag">MediatR</span>
+                                            <span class="tag">Role-Based Auth</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -746,8 +832,6 @@ public class OrderRepository
                 </div>
             </div>
         </section>
-
-        <!-- تأكد من وجود مكتبة الـ QR Code والملف الخاص بك قبل إغلاق الـ body مباشرة -->
         <script src="js/qrcode.min.js"></script>
         <script src="js/script.js"></script>
 
