@@ -490,7 +490,7 @@ public class OrderRepository
                                 Samraa AlYaman is a high-performance, enterprise-grade E-commerce platform designed around distributed system principles. The primary engineering goals of the platform are absolute data consistency, high-throughput query performance, reliable asynchronous workflows, and complex business domain modeling.
                             </p>
 
-                            <h4 class="screenshot-title" style="margin-bottom: 0.5rem;">Project Core &amp; Engineering Overview</h4>
+                            <h4 class="screenshot-title">Project Core &amp; Engineering Overview</h4>
                             <ul class="project-features">
                                 <li><strong>Distributed Event Sourcing:</strong> Designed a complete historical state tracking workflow for full auditability of every business operation.</li>
                                 <li><strong>Eventual Consistency Middleware:</strong> Fault-tolerant pipeline that publishes domain events after the HTTP response completes, with automatic rollback on failure.</li>
@@ -519,63 +519,63 @@ public class OrderRepository
                                 <span class="skill-tag">Soft Foreign Keys</span>
                             </div>
 
-                            <div class="project-links" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+                            <div class="project-links">
                                 <a href="https://github.com/AhmedKhZain/Smraa_AlYaman" target="_blank"
                                     class="btn btn-primary btn-sm">View Repository</a>
                             </div>
 
                             <div class="project-screenshots">
                                 <h4 class="screenshot-title">Architecture &amp; Implementation Gallery</h4>
-                                <div class="healink-gallery-grid">
-                                    <div class="healink-gallery-item">
+                                <div class="project-gallery-grid">
+                                    <div class="project-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman Not all commands needed for the events logic.png" alt="Selective Transactions 1">
                                         </div>
-                                        <div class="healink-gallery-caption">Selective Command Transactions &mdash; Marker interface pattern prevents unnecessary transaction overhead by starting database transactions only for commands that raise domain events.</div>
+                                        <div class="project-gallery-caption">Selective Command Transactions &mdash; Marker interface pattern prevents unnecessary transaction overhead by starting database transactions only for commands that raise domain events.</div>
                                     </div>
-                                    <div class="healink-gallery-item">
+                                    <div class="project-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman how events trainsaction is started for only trainsaction needed commands.png" alt="Selective Transactions 2">
                                         </div>
-                                        <div class="healink-gallery-caption">Transaction Pipeline Flow &mdash; MediatR pipeline behavior inspects command types at runtime to conditionally wrap execution in a transaction scope.</div>
+                                        <div class="project-gallery-caption">Transaction Pipeline Flow &mdash; MediatR pipeline behavior inspects command types at runtime to conditionally wrap execution in a transaction scope.</div>
                                     </div>
-                                    <div class="healink-gallery-item">
+                                    <div class="project-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman EventualConsistencyMiddleware.png" alt="Eventual Consistency Middleware">
                                         </div>
-                                        <div class="healink-gallery-caption">Fault-Tolerant Eventual Consistency Middleware &mdash; Publishes pending domain events post-response and performs automatic rollback with ErrorAudit storage on failure.</div>
+                                        <div class="project-gallery-caption">Fault-Tolerant Eventual Consistency Middleware &mdash; Publishes pending domain events post-response and performs automatic rollback with ErrorAudit storage on failure.</div>
                                     </div>
-                                    <div class="healink-gallery-item">
+                                    <div class="project-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman Custom Price being removed after the branch has been removed.png" alt="Soft Foreign Key">
                                         </div>
-                                        <div class="healink-gallery-caption">Soft Foreign Key Cascade Simulation &mdash; Dependent records are eventually deleted through domain events instead of database cascade deletes, preventing distributed lockups.</div>
+                                        <div class="project-gallery-caption">Soft Foreign Key Cascade Simulation &mdash; Dependent records are eventually deleted through domain events instead of database cascade deletes, preventing distributed lockups.</div>
                                     </div>
-                                    <div class="healink-gallery-item">
+                                    <div class="project-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/SamraaAlYaman/SamraaAlYaman how internally the audit record is being created.png" alt="Audit Tracking">
                                         </div>
-                                        <div class="healink-gallery-caption">Domain Event Generation &amp; Audit Tracking &mdash; Entities generate domain events internally while simultaneously creating immutable audit records for every business state transition.</div>
+                                        <div class="project-gallery-caption">Domain Event Generation &amp; Audit Tracking &mdash; Entities generate domain events internally while simultaneously creating immutable audit records for every business state transition.</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="healink-note">
-                                <div class="healink-note-header">
-                                    <span class="healink-note-badge"><i class="fa-solid fa-note-sticky"></i> Samraa AlYaman Note</span>
-                                    <a href="https://github.com/AhmedKhZain/Smraa_AlYaman" target="_blank" class="healink-note-repo"><i class="fa-brands fa-github"></i> Smraa_AlYaman</a>
+                            <div class="project-note">
+                                <div class="project-note-header">
+                                    <span class="project-note-badge"><i class="fa-solid fa-note-sticky"></i> Samraa AlYaman Note</span>
+                                    <a href="https://github.com/AhmedKhZain/Smraa_AlYaman" target="_blank" class="project-note-repo"><i class="fa-brands fa-github"></i> Smraa_AlYaman</a>
                                 </div>
-                                <div class="healink-note-body">
-                                    <div class="healink-note-block">
+                                <div class="project-note-body">
+                                    <div class="project-note-block">
                                         <h5>Project Core</h5>
                                         <p>An Enterprise-Grade E-Commerce API Engineered for Distributed Consistency, High-Throughput Queries, and Event-Driven Workflows.</p>
                                     </div>
-                                    <div class="healink-note-block">
+                                    <div class="project-note-block">
                                         <h5>Architecture Pillars</h5>
                                         <ul>
                                             <li>Clean Architecture &mdash; Domain-Driven with Inversion of Control</li>
@@ -584,9 +584,9 @@ public class OrderRepository
                                             <li>Eventual Consistency &mdash; Fault-Tolerant Middleware with Auto-Rollback</li>
                                         </ul>
                                     </div>
-                                    <div class="healink-note-block">
+                                    <div class="project-note-block">
                                         <h5>Technologies Used</h5>
-                                        <div class="healink-note-tags">
+                                        <div class="project-note-tags">
                                             <span class="tag">C#</span>
                                             <span class="tag">ASP.NET Core API</span>
                                             <span class="tag">EF Core</span>
@@ -625,7 +625,7 @@ public class OrderRepository
                                 An Enterprise-Grade REST API Engineered for Secure Medical Operations, Care-Tracking Compliance, and Patient-Guardian Workflows.
                             </p>
 
-                            <h4 class="screenshot-title" style="margin-bottom: 0.5rem;">Project Core & Security Overview</h4>
+                            <h4 class="screenshot-title">Project Core & Security Overview</h4>
                             <ul class="project-features">
                                 <li><strong>Patient-Centric Mission:</strong> Bridges doctors, patients, and guardians through secure medical pipelines, prescription synchronization, and real-time reminders.</li>
                                 <li><strong>Decoupled Architecture:</strong> Built using ASP.NET Core and Clean Architecture to isolate mechanical concerns from domain layers.</li>
@@ -640,7 +640,7 @@ public class OrderRepository
                                 <span class="skill-tag">EF Core</span>
                                 <span class="skill-tag">SQL Server</span>
                                 <span class="skill-tag">Clean Architecture</span>
-  <span class="skill-tag">Unit of Work</span>
+                                <span class="skill-tag">Unit of Work</span>
                                 <span class="skill-tag">Repository Pattern</span>
                                 <span class="skill-tag">CQRS</span>
                                 <span class="skill-tag">MediatR</span>
@@ -650,63 +650,63 @@ public class OrderRepository
                                 <span class="skill-tag">Role-Based Authorization</span>
                             </div>
 
-                            <div class="project-links" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+                            <div class="project-links">
                                 <a href="https://github.com/AhmedKhZain/HealLink" target="_blank"
                                     class="btn btn-primary btn-sm">View Repository</a>
                             </div>
 
                             <div class="project-screenshots">
                                 <h4 class="screenshot-title">Architecture & Implementation Gallery</h4>
-                                <div class="healink-gallery-grid">
-                                    <div class="healink-gallery-item">
+                                <div class="project-gallery-grid">
+                                    <div class="project-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/HealLink/High-Level Architectural Design (Clean Architecture).png" alt="High-Level Architectural Design showing Clean Architecture layers">
                                         </div>
-                                        <div class="healink-gallery-caption">Clean Architecture Blueprint &mdash; Separation of Concerns enforcing boundary rules with dependencies pointing inward toward the core Domain Model.</div>
+                                        <div class="project-gallery-caption">Clean Architecture Blueprint &mdash; Separation of Concerns enforcing boundary rules with dependencies pointing inward toward the core Domain Model.</div>
                                     </div>
-                                    <div class="healink-gallery-item">
+                                    <div class="project-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/HealLink/Entity Relationship Diagram &amp; Relational Database Design.png" alt="Entity Relationship Diagram showing relational database design">
                                         </div>
-                                        <div class="healink-gallery-caption">Relational Database Design &mdash; Highly normalized ERD mapping multi-user workflows with foreign key relationships for Patients, Doctors, Payments, Prescriptions, and PatientGuardians.</div>
+                                        <div class="project-gallery-caption">Relational Database Design &mdash; Highly normalized ERD mapping multi-user workflows with foreign key relationships for Patients, Doctors, Payments, Prescriptions, and PatientGuardians.</div>
                                     </div>
-                                    <div class="healink-gallery-item">
+                                    <div class="project-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/HealLink/Secure Stripe Integration &amp; Atomicity via Unit of Work.png" alt="Secure Stripe Integration and atomic Unit of Work transactions">
                                         </div>
-                                        <div class="healink-gallery-caption">Secure Stripe Integration &amp; Atomicity via Unit of Work &mdash; Handles Stripe Checkout asynchronously, guaranteeing database writes and external API calls persist or fail together.</div>
+                                        <div class="project-gallery-caption">Secure Stripe Integration &amp; Atomicity via Unit of Work &mdash; Handles Stripe Checkout asynchronously, guaranteeing database writes and external API calls persist or fail together.</div>
                                     </div>
-                                    <div class="healink-gallery-item">
+                                    <div class="project-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/HealLink/Doctor-Side Request Controller Operations.png" alt="Doctor-side request controller operations with MediatR pipeline">
                                         </div>
-                                        <div class="healink-gallery-caption">Doctor Request Controllers &mdash; Decoupled Presentation Layer using MediatR pipeline routing to separate HTTP requests into isolated Commands and Queries.</div>
+                                        <div class="project-gallery-caption">Doctor Request Controllers &mdash; Decoupled Presentation Layer using MediatR pipeline routing to separate HTTP requests into isolated Commands and Queries.</div>
                                     </div>
-                                    <div class="healink-gallery-item">
+                                    <div class="project-gallery-item">
                                         <div class="image-hover-wrapper">
                                             <div class="enlarge-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</div>
                                             <img class="lightbox-trigger" loading="lazy" src="media/ProjectImages/HealLink/Patient-Side Subscriptions &amp; Query Pipelines.png" alt="Patient-side subscriptions and query pipelines">
                                         </div>
-                                        <div class="healink-gallery-caption">Patient Request Pipelines &mdash; Asynchronous Command Flow protecting system contracts by routing requests without exposing underlying Domain Models to API response contracts.</div>
+                                        <div class="project-gallery-caption">Patient Request Pipelines &mdash; Asynchronous Command Flow protecting system contracts by routing requests without exposing underlying Domain Models to API response contracts.</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="healink-note">
-                                <div class="healink-note-header">
-                                    <span class="healink-note-badge"><i class="fa-solid fa-note-sticky"></i> HealLink Note</span>
-                                    <a href="https://github.com/AhmedKhZain/Smraa_AlYaman" target="_blank" class="healink-note-repo"><i class="fa-brands fa-github"></i> Smraa_AlYaman</a>
+                            <div class="project-note">
+                                <div class="project-note-header">
+                                    <span class="project-note-badge"><i class="fa-solid fa-note-sticky"></i> HealLink Note</span>
+                                    <a href="https://github.com/AhmedKhZain/Smraa_AlYaman" target="_blank" class="project-note-repo"><i class="fa-brands fa-github"></i> Smraa_AlYaman</a>
                                 </div>
-                                <div class="healink-note-body">
-                                    <div class="healink-note-block">
+                                <div class="project-note-body">
+                                    <div class="project-note-block">
                                         <h5>Project Core</h5>
                                         <p>An Enterprise-Grade REST API Engineered for Secure Medical Operations, Care-Tracking Compliance, and Patient-Guardian Workflows.</p>
                                     </div>
-                                    <div class="healink-note-block">
+                                    <div class="project-note-block">
                                         <h5>Architecture Pillars</h5>
                                         <ul>
                                             <li>Clean Architecture &mdash; Domain-Driven with Inversion of Control</li>
@@ -715,9 +715,9 @@ public class OrderRepository
                                             <li>Web API Controllers &mdash; MediatR Pipeline Routing</li>
                                         </ul>
                                     </div>
-                                    <div class="healink-note-block">
+                                    <div class="project-note-block">
                                         <h5>Technologies Used</h5>
-                                        <div class="healink-note-tags">
+                                        <div class="project-note-tags">
                                             <span class="tag">EF Core</span>
                                             <span class="tag">Stripe</span>
                                             <span class="tag">Options Pattern</span>
@@ -756,7 +756,7 @@ public class OrderRepository
                                     cross-functional teams.</li>
                             </ul>
 
-                            <div class="project-links" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+                            <div class="project-links">
                                 <a href="https://github.com/AhmedKhZain/DoDone" target="_blank"
                                     class="btn btn-primary btn-sm">View Repository</a>
                             </div>
@@ -790,7 +790,7 @@ public class OrderRepository
                                 <li>Engineered strict indexing schemas and fast keyword retrieval routines.</li>
                             </ul>
 
-                            <div class="project-links" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+                            <div class="project-links">
                                 <a href="https://github.com/AhmedKhZain/G-Search" target="_blank"
                                     class="btn btn-primary btn-sm">View Repository</a>
                             </div>

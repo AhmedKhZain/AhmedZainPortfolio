@@ -665,7 +665,7 @@ section {
 .screenshot-title {
     font-size: 1.1rem;
     color: #ffffff;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .screenshots-grid {
@@ -702,6 +702,8 @@ section {
 .project-links {
     display: flex;
     gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .contact-container {
@@ -849,66 +851,6 @@ section {
 
 .icon-github {
     color: #ffffff;
-}
-
-/* اللون الأبيض ليتوافق مع ثيم جيت هاب في الوضع الداكن */
-
-/* تحديثات المربع المنبثق لضمان الثبات التام ومنع التداخل */
-.qr-hover-link .qr-dropdown {
-    position: absolute;
-    bottom: 130%;
-    left: 50%;
-    transform: translateX(-50%) scale(0.9);
-    background-color: #161b22;
-    border: 1px solid #30363d;
-    padding: 0.75rem;
-    border-radius: 10px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    width: max-content;
-}
-
-.qr-hover-link .qr-header {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #c9d1d9;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-.qr-hover-link .qr-box img,
-.qr-hover-link .qr-box canvas {
-    display: block;
-    width: 120px !important;
-    height: 120px !important;
-    border-radius: 6px;
-    background-color: #ffffff;
-    padding: 6px;
-}
-
-.qr-hover-link:hover .qr-dropdown {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateX(-50%) scale(1);
-}
-
-.qr-hover-link .qr-dropdown::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 6px;
-    border-style: solid;
-    border-color: #161b22 transparent transparent transparent;
 }
 
 footer {
@@ -1061,61 +1003,6 @@ footer {
     color: #000000;
 }
 
-/* Technical Breakdown Styles */
-.technical-breakdown {
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border-color);
-}
-
-.technical-item {
-    margin-bottom: 2rem;
-    background-color: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-}
-
-.technical-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.03);
-}
-
-.technical-item h5 {
-    font-size: 1.1rem;
-    color: #ffffff;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* Technical Breakdown Scroll Panel */
-.technical-scroll-panel {
-    max-height: 550px;
-    overflow-y: auto;
-    padding-right: 1rem;
-    margin-top: 1.5rem;
-}
-
-/* Custom Scrollbar for the Scroll Panel */
-.technical-scroll-panel::-webkit-scrollbar {
-    width: 8px;
-}
-.technical-scroll-panel::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 4px;
-}
-.technical-scroll-panel::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 4px;
-}
-.technical-scroll-panel::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.3);
-}
-
 .image-hover-wrapper {
     position: relative;
     cursor: zoom-in;
@@ -1153,22 +1040,7 @@ footer {
     opacity: 1;
 }
 
-.technical-images-grid {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.technical-images-grid .image-hover-wrapper {
-    flex: 1;
-    min-width: 0;
-    margin-bottom: 0;
-}
-
 @media (max-width: 768px) {
-    .technical-images-grid {
-        flex-direction: column;
-    }
     .hero-title {
         font-size: 2.25rem;
     }
@@ -1274,15 +1146,15 @@ footer {
     border: 1px solid rgba(255,255,255,0.1);
 }
 
-/* HealLink Gallery Grid */
-.healink-gallery-grid {
+/* Project Gallery Grid */
+.project-gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.healink-gallery-item {
+.project-gallery-item {
     background-color: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -1290,18 +1162,18 @@ footer {
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.healink-gallery-item:hover {
+.project-gallery-item:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     border-color: rgba(255, 255, 255, 0.15);
 }
 
-.healink-gallery-item .image-hover-wrapper {
+.project-gallery-item .image-hover-wrapper {
     margin-bottom: 0;
     width: 100%;
 }
 
-.healink-gallery-item .image-hover-wrapper img {
+.project-gallery-item .image-hover-wrapper img {
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -1310,7 +1182,7 @@ footer {
     border: none;
 }
 
-.healink-gallery-caption {
+.project-gallery-caption {
     padding: 1rem 1.25rem;
     font-size: 0.88rem;
     color: var(--text-muted);
@@ -1319,8 +1191,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.15);
 }
 
-/* HealLink Note Premium UI */
-.healink-note {
+/* Project Note Premium UI */
+.project-note {
     margin-top: 2rem;
     border: 1px solid var(--primary);
     border-radius: 10px;
@@ -1329,7 +1201,7 @@ footer {
     box-shadow: 0 0 30px rgba(88, 166, 255, 0.08), inset 0 1px 0 rgba(88, 166, 255, 0.1);
 }
 
-.healink-note-header {
+.project-note-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1340,7 +1212,7 @@ footer {
     gap: 0.5rem;
 }
 
-.healink-note-badge {
+.project-note-badge {
     font-size: 0.95rem;
     font-weight: 700;
     color: var(--primary);
@@ -1350,11 +1222,11 @@ footer {
     letter-spacing: 0.01em;
 }
 
-.healink-note-badge i {
+.project-note-badge i {
     font-size: 1rem;
 }
 
-.healink-note-repo {
+.project-note-repo {
     font-size: 0.85rem;
     color: var(--text-muted);
     text-decoration: none;
@@ -1368,25 +1240,25 @@ footer {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.healink-note-repo:hover {
+.project-note-repo:hover {
     color: #ffffff;
     border-color: rgba(255, 255, 255, 0.2);
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-.healink-note-body {
+.project-note-body {
     padding: 1.5rem;
 }
 
-.healink-note-block {
+.project-note-block {
     margin-bottom: 1.5rem;
 }
 
-.healink-note-block:last-child {
+.project-note-block:last-child {
     margin-bottom: 0;
 }
 
-.healink-note-block h5 {
+.project-note-block h5 {
     font-size: 0.85rem;
     font-weight: 700;
     color: var(--primary);
@@ -1397,19 +1269,19 @@ footer {
     border-bottom: 1px solid rgba(88, 166, 255, 0.15);
 }
 
-.healink-note-block p {
+.project-note-block p {
     font-size: 0.95rem;
     color: var(--text-main);
     line-height: 1.6;
 }
 
-.healink-note-block ul {
+.project-note-block ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.healink-note-block ul li {
+.project-note-block ul li {
     position: relative;
     padding-left: 1.25rem;
     margin-bottom: 0.5rem;
@@ -1417,7 +1289,7 @@ footer {
     font-size: 0.92rem;
 }
 
-.healink-note-block ul li::before {
+.project-note-block ul li::before {
     content: "▹";
     position: absolute;
     left: 0;
@@ -1425,29 +1297,29 @@ footer {
     font-size: 0.85rem;
 }
 
-.healink-note-tags {
+.project-note-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.healink-note-tags .tag {
+.project-note-tags .tag {
     background-color: rgba(88, 166, 255, 0.08);
     border-color: rgba(88, 166, 255, 0.2);
     color: var(--primary);
 }
 
-.healink-note-tags .tag:hover {
+.project-note-tags .tag:hover {
     background-color: rgba(88, 166, 255, 0.15);
     color: #ffffff;
     border-color: var(--primary);
 }
 
 @media (max-width: 600px) {
-    .healink-gallery-grid {
+    .project-gallery-grid {
         grid-template-columns: 1fr;
     }
-    .healink-note-header {
+    .project-note-header {
         flex-direction: column;
         align-items: flex-start;
     }
