@@ -662,6 +662,20 @@ section {
     margin-bottom: 2rem;
 }
 
+.svg-diagram-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #0D1117;
+}
+
+.svg-diagram-wrapper svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .screenshot-title {
     font-size: 1.1rem;
     color: #ffffff;

@@ -517,6 +517,7 @@ public class OrderRepository
                                 <span class="skill-tag">Event Sourcing</span>
                                 <span class="skill-tag">Eventual Consistency</span>
                                 <span class="skill-tag">Soft Foreign Keys</span>
+                                <span class="skill-tag">Role-Based Authorization</span>
                             </div>
 
                             <div class="project-links">
@@ -601,6 +602,7 @@ public class OrderRepository
                                             <span class="tag">Event Sourcing</span>
                                             <span class="tag">Result Pattern</span>
                                             <span class="tag">Soft Foreign Keys</span>
+                                            <span class="tag">Role-Based Authorization</span>
                                         </div>
                                     </div>
                                 </div>
@@ -767,6 +769,13 @@ public class OrderRepository
                                 <span class="skill-tag">SQL Server</span>
                                 <span class="skill-tag">Clean Architecture</span>
                                 <span class="skill-tag">Repository Pattern</span>
+                                <span class="skill-tag">Unit of Work</span>
+                                <span class="skill-tag">Outbox Pattern</span>
+                                <span class="skill-tag">Options Pattern</span>
+                                <span class="skill-tag">Result Pattern</span>
+                                <span class="skill-tag">CQRS</span>
+                                <span class="skill-tag">MediatR</span>
+                                <span class="skill-tag">Role-Based Authorization</span>
                                 <span class="skill-tag">Dynamic Auth</span>
                             </div>
 
@@ -803,6 +812,13 @@ public class OrderRepository
                                             <span class="tag">SQL Server</span>
                                             <span class="tag">Clean Architecture</span>
                                             <span class="tag">Repository Pattern</span>
+                                            <span class="tag">Unit of Work</span>
+                                            <span class="tag">Outbox Pattern</span>
+                                            <span class="tag">Options Pattern</span>
+                                            <span class="tag">Result Pattern</span>
+                                            <span class="tag">CQRS</span>
+                                            <span class="tag">MediatR</span>
+                                            <span class="tag">Role-Based Authorization</span>
                                             <span class="tag">Dynamic Auth</span>
                                         </div>
                                     </div>
@@ -824,17 +840,170 @@ public class OrderRepository
                     </div>
                     <div class="project-content-expandable">
                         <div class="project-inner-body">
-                            <p class="project-desc">A fast, custom-tailored search engine built directly within the .NET
-                                environment to scan parsed web indexes.</p>
+                            <p class="project-desc">
+                                A Python-based web crawler and HTML parser that builds an inverted index from crawled pages, served via a .NET RESTful API for search queries.
+                            </p>
+
+                            <h4 class="screenshot-title">Project Core &amp; Engineering Overview</h4>
                             <ul class="project-features">
-                                <li>Successfully executed scraping models for over 160K unique web indexes.</li>
-                                <li>Engineered strict indexing schemas and fast keyword retrieval routines.</li>
+                                <li><strong>Python Web Crawler:</strong> Discovers and fetches web pages using <code>requests</code>, <code>urllib.parse</code>, with concurrent threading via <code>concurrent.futures.ThreadPoolExecutor</code>.</li>
+                                <li><strong>HTML Parser:</strong> Parses fetched HTML with <code>BeautifulSoup</code> to extract text and links, tracking visited URLs with <code>collections.deque</code>.</li>
+                                <li><strong>Inverted Index Generation:</strong> Processes parsed content into inverted index files persisted using <code>os</code> and <code>shutil</code>, with progress reported via <code>tqdm</code>.</li>
+                                <li><strong>.NET RESTful API:</strong> Serves search queries against the generated inverted index.</li>
                             </ul>
 
-                            <div class="project-links">
-                                <a href="https://github.com/AhmedKhZain/G-Search" target="_blank"
-                                    class="btn btn-primary btn-sm">View Repository</a>
+                            <div class="project-skills">
+                                <span class="skill-tag">C#</span>
+                                <span class="skill-tag">ASP.NET Core API</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Beautiful Soup</span>
+                                <span class="skill-tag">Requests</span>
                             </div>
+
+                            <div class="project-screenshots">
+                                <h4 class="screenshot-title">System Architecture</h4>
+                                <div class="svg-diagram-wrapper">
+                                    <svg viewBox="0 0 960 245" role="img" aria-label="G Search System Architecture Diagram">
+                                        <defs>
+                                            <linearGradient id="pyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#306998" />
+                                                <stop offset="100%" stop-color="#4B8BBE" />
+                                            </linearGradient>
+                                            <linearGradient id="csGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#6B21A8" />
+                                                <stop offset="100%" stop-color="#7C3AED" />
+                                            </linearGradient>
+                                            <linearGradient id="resultGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#059669" />
+                                                <stop offset="100%" stop-color="#34D399" />
+                                            </linearGradient>
+                                            <marker id="arrowRight" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+                                                <path d="M 0 0 L 10 5 L 0 10 Z" fill="#58A6FF" />
+                                            </marker>
+                                            <marker id="arrowRightGreen" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+                                                <path d="M 0 0 L 10 5 L 0 10 Z" fill="#34D399" />
+                                            </marker>
+                                        </defs>
+
+                                        <!-- Background -->
+                                        <rect x="0" y="0" width="960" height="245" fill="#0D1117" rx="12" />
+
+                                        <!-- Main Container Border -->
+                                        <rect x="15" y="15" width="930" height="215" fill="none" stroke="#30363D" stroke-width="1.5" rx="10" />
+
+                                        <!-- Title -->
+                                        <text x="480" y="35" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700" font-family="system-ui,-apple-system,sans-serif">G Search System Architecture</text>
+
+                                        <!-- Arrows -->
+                                        <line x1="190" y1="115" x2="222" y2="115" stroke="#58A6FF" stroke-width="2" marker-end="url(#arrowRight)" />
+                                        <line x1="375" y1="115" x2="407" y2="115" stroke="#58A6FF" stroke-width="2" marker-end="url(#arrowRight)" />
+                                        <line x1="560" y1="115" x2="592" y2="115" stroke="#58A6FF" stroke-width="2" marker-end="url(#arrowRight)" />
+                                        <line x1="745" y1="115" x2="777" y2="115" stroke="#34D399" stroke-width="2" marker-end="url(#arrowRightGreen)" />
+
+                                        <!-- Node 1: Python Web Crawler -->
+                                        <rect x="40" y="58" width="150" height="115" fill="rgba(48,105,152,0.1)" stroke="url(#pyGrad)" stroke-width="1.5" rx="8" />
+                                        <rect x="40" y="58" width="150" height="28" fill="rgba(48,105,152,0.2)" rx="8" />
+                                        <rect x="40" y="80" width="150" height="6" fill="rgba(48,105,152,0.2)" />
+                                        <text x="115" y="76" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700" font-family="system-ui,-apple-system,sans-serif">Python Web Crawler</text>
+
+                                        <circle cx="60" cy="101" r="6" fill="none" stroke="#58A6FF" stroke-width="1.5" />
+                                        <line x1="65" y1="106" x2="72" y2="113" stroke="#58A6FF" stroke-width="2" stroke-linecap="round" />
+                                        <text x="78" y="105" fill="#C9D1D9" font-size="9" font-family="system-ui,-apple-system,sans-serif">Discovers &amp; fetches</text>
+                                        <text x="78" y="116" fill="#C9D1D9" font-size="9" font-family="system-ui,-apple-system,sans-serif">web pages</text>
+
+                                        <text x="115" y="153" text-anchor="middle" fill="#8B949E" font-size="7.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">requests &amp; urllib.parse</text>
+                                        <text x="115" y="164" text-anchor="middle" fill="#8B949E" font-size="7.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">ThreadPoolExecutor &amp; deque</text>
+
+                                        <!-- Node 2: BeautifulSoup Parser -->
+                                        <rect x="225" y="58" width="150" height="115" fill="rgba(48,105,152,0.1)" stroke="url(#pyGrad)" stroke-width="1.5" rx="8" />
+                                        <rect x="225" y="58" width="150" height="28" fill="rgba(48,105,152,0.2)" rx="8" />
+                                        <rect x="225" y="80" width="150" height="6" fill="rgba(48,105,152,0.2)" />
+                                        <text x="300" y="76" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700" font-family="system-ui,-apple-system,sans-serif">BeautifulSoup Parser</text>
+
+                                        <rect x="245" y="95" width="10" height="12" rx="1" fill="none" stroke="#58A6FF" stroke-width="1.5" />
+                                        <line x1="248" y1="99" x2="252" y2="99" stroke="#58A6FF" stroke-width="1.5" />
+                                        <line x1="248" y1="103" x2="252" y2="103" stroke="#58A6FF" stroke-width="1.5" />
+                                        <text x="264" y="105" fill="#C9D1D9" font-size="9" font-family="system-ui,-apple-system,sans-serif">Extracts text &amp; links</text>
+                                        <text x="264" y="116" fill="#C9D1D9" font-size="9" font-family="system-ui,-apple-system,sans-serif">from crawled HTML</text>
+
+                                        <text x="300" y="155" text-anchor="middle" fill="#8B949E" font-size="7.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">beautifulsoup4</text>
+                                        <text x="300" y="166" text-anchor="middle" fill="#8B949E" font-size="7.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">collections.deque</text>
+
+                                        <!-- Node 3: Inverted Index Files -->
+                                        <rect x="410" y="58" width="150" height="115" fill="rgba(48,105,152,0.1)" stroke="url(#pyGrad)" stroke-width="1.5" rx="8" />
+                                        <rect x="410" y="58" width="150" height="28" fill="rgba(48,105,152,0.2)" rx="8" />
+                                        <rect x="410" y="80" width="150" height="6" fill="rgba(48,105,152,0.2)" />
+                                        <text x="485" y="76" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700" font-family="system-ui,-apple-system,sans-serif">Inverted Index Files</text>
+
+                                        <rect x="430" y="95" width="12" height="12" rx="1" fill="none" stroke="#58A6FF" stroke-width="1.5" />
+                                        <line x1="433" y1="99" x2="439" y2="99" stroke="#58A6FF" stroke-width="1" />
+                                        <line x1="433" y1="102" x2="439" y2="102" stroke="#58A6FF" stroke-width="1" />
+                                        <line x1="433" y1="105" x2="439" y2="105" stroke="#58A6FF" stroke-width="1" />
+                                        <text x="450" y="105" fill="#C9D1D9" font-size="9" font-family="system-ui,-apple-system,sans-serif">Index files</text>
+                                        <text x="450" y="116" fill="#C9D1D9" font-size="9" font-family="system-ui,-apple-system,sans-serif">persisted to disk</text>
+
+                                        <text x="485" y="158" text-anchor="middle" fill="#8B949E" font-size="7.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">os &amp; shutil &amp; tqdm</text>
+
+                                        <!-- Node 4: .NET RestFull API -->
+                                        <rect x="595" y="58" width="150" height="115" fill="rgba(124,58,237,0.1)" stroke="url(#csGrad)" stroke-width="1.5" rx="8" />
+                                        <rect x="595" y="58" width="150" height="28" fill="rgba(124,58,237,0.2)" rx="8" />
+                                        <rect x="595" y="80" width="150" height="6" fill="rgba(124,58,237,0.2)" />
+                                        <text x="670" y="76" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700" font-family="system-ui,-apple-system,sans-serif">.NET RestFull API</text>
+
+                                        <rect x="614" y="95" width="12" height="12" rx="2" fill="none" stroke="#A78BFA" stroke-width="1.5" />
+                                        <circle cx="620" cy="101" r="3" fill="none" stroke="#A78BFA" stroke-width="1.5" />
+                                        <line x1="622" y1="103" x2="626" y2="107" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" />
+                                        <text x="634" y="105" fill="#C9D1D9" font-size="9" font-family="system-ui,-apple-system,sans-serif">Serves search queries</text>
+                                        <text x="634" y="116" fill="#C9D1D9" font-size="9" font-family="system-ui,-apple-system,sans-serif">against the index</text>
+
+                                        <text x="670" y="158" text-anchor="middle" fill="#8B949E" font-size="7.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">C# &amp; ASP.NET Core</text>
+
+                                        <!-- Node 5: Search Results -->
+                                        <rect x="780" y="58" width="150" height="115" fill="rgba(5,150,105,0.1)" stroke="url(#resultGrad)" stroke-width="1.5" rx="8" />
+                                        <rect x="780" y="58" width="150" height="28" fill="rgba(5,150,105,0.2)" rx="8" />
+                                        <rect x="780" y="80" width="150" height="6" fill="rgba(5,150,105,0.2)" />
+                                        <text x="855" y="76" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700" font-family="system-ui,-apple-system,sans-serif">Search Results</text>
+
+                                        <circle cx="800" cy="101" r="6" fill="none" stroke="#34D399" stroke-width="1.5" />
+                                        <polyline points="796,101 799,104 805,98" fill="none" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <text x="815" y="105" fill="#C9D1D9" font-size="9" font-family="system-ui,-apple-system,sans-serif">Returns ranked</text>
+                                        <text x="815" y="116" fill="#C9D1D9" font-size="9" font-family="system-ui,-apple-system,sans-serif">search results</text>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="project-note">
+                                <div class="project-note-header">
+                                    <span class="project-note-badge"><i class="fa-solid fa-note-sticky"></i> G Search Note</span>
+                                </div>
+                                <div class="project-note-body">
+                                    <div class="project-note-block">
+                                        <h5>Project Core</h5>
+                                        <p>A Python-based web crawler and HTML parser that builds an inverted index from crawled pages, served via a .NET RESTful API for search queries.</p>
+                                    </div>
+                                    <div class="project-note-block">
+                                        <h5>Architecture Pillars</h5>
+                                        <ul>
+                                            <li>Python Web Crawler &mdash; Fetches pages concurrently via <code>requests</code> + <code>ThreadPoolExecutor</code></li>
+                                            <li>HTML Parsing &mdash; Extracts content with <code>BeautifulSoup</code> tracking URLs via <code>deque</code></li>
+                                            <li>Inverted Index &mdash; Persisted index files built from parsed content</li>
+                                            <li>.NET RESTful API &mdash; Serves search results from the generated index</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-note-block">
+                                        <h5>Technologies Used</h5>
+                                        <div class="project-note-tags">
+                                            <span class="tag">C#</span>
+                                            <span class="tag">ASP.NET Core API</span>
+                                            <span class="tag">Python</span>
+                                            <span class="tag">Beautiful Soup</span>
+                                            <span class="tag">Requests</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="height: 2.5rem;"></div>
                         </div>
                     </div>
                 </div>
